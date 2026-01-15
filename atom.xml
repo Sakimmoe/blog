@@ -1,0 +1,1025 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://anya.moe</id>
+    <title>雫るる MOE !</title>
+    <updated>2026-01-15T05:08:16.919Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://anya.moe"/>
+    <link rel="self" href="https://anya.moe/atom.xml"/>
+    <subtitle>&lt;div id=&quot;count&quot;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+  const target = new Date(&quot;2052-02-29T00:00:00&quot;);
+
+  function update() {
+    const now = new Date(); // 使用系统时间：如果电脑是北京时间就是北京时间
+    let diff = target - now;
+
+    if (diff &lt; 0) diff = 0;
+
+    const sec = Math.floor(diff / 1000);
+    const days = Math.floor(sec / 86400);
+    const hours = Math.floor((sec % 86400) / 3600);
+    const minutes = Math.floor((sec % 3600) / 60);
+    const seconds = sec % 60;
+
+    document.getElementById(&quot;count&quot;).textContent =
+      `距离 2052-02-29 还有 ${days} 天 ${hours} 时 ${minutes} 分 ${seconds} 秒！`;
+  }
+
+  update();
+  setInterval(update, 1000);
+&lt;/script&gt;</subtitle>
+    <logo>https://anya.moe/images/avatar.png</logo>
+    <icon>https://anya.moe/favicon.ico</icon>
+    <rights>All rights reserved 2026, 雫るる MOE !</rights>
+    <entry>
+        <title type="html"><![CDATA[【YABS】Netcup RS 1000 G11 SE NUE FEB25 	]]></title>
+        <id>https://anya.moe/post/yabs-netcup-rs-1000-g11-se-nue-feb25/</id>
+        <link href="https://anya.moe/post/yabs-netcup-rs-1000-g11-se-nue-feb25/">
+        </link>
+        <updated>2026-01-06T19:36:28.000Z</updated>
+        <content type="html"><![CDATA[<p>前段时间Netcup推G12的时候就想把这个G11给升级成G12，G12的CPU从9634升级到了9645，但是G12最低只能季付，而且还贵了半欧，于是我就暂时没有升级。<br>
+最近看别人测G12的性能居然和我的G11差不多，有时候还不如G11，这下终于能安心了，Netcup的G12估计是超售的有点多。<br>
+这里给我的G11留一下档，目前拿来放论坛了。</p>
+<pre><code>Basic System Information:
+---------------------------------
+Uptime     : 2 days, 17 hours, 41 minutes
+Processor  : AMD EPYC 9634 84-Core Processor
+CPU cores  : 4 @ 2246.624 MHz
+AES-NI     : ✔ Enabled
+VM-x/AMD-V : ❌ Disabled
+RAM        : 7.8 GiB
+Swap       : 0.0 KiB
+Disk       : 513.0 GiB
+Distro     : Debian GNU/Linux 12 (bookworm)
+Kernel     : 6.1.0-41-cloud-amd64
+VM Type    : KVM SERVER
+IPv4/IPv6  : ✔ Online / ✔ Online
+
+IPv6 Network Information:
+---------------------------------
+ISP        : netcup GmbH
+ASN        : AS197540 netcup GmbH
+Host       : Netcup KVM VIE
+Location   : Vienna, Vienna (9)
+Country    : Austria
+
+fio Disk Speed Tests (Mixed R/W 50/50) (Partition -):
+---------------------------------
+Block Size | 4k            (IOPS) | 64k           (IOPS)
+  ------   | ---            ----  | ----           ---- 
+Read       | 198.25 MB/s  (49.5k) | 1.09 GB/s    (17.0k)
+Write      | 198.78 MB/s  (49.6k) | 1.09 GB/s    (17.1k)
+Total      | 397.03 MB/s  (99.2k) | 2.18 GB/s    (34.2k)
+           |                      |                     
+Block Size | 512k          (IOPS) | 1m            (IOPS)
+  ------   | ---            ----  | ----           ---- 
+Read       | 1.28 GB/s     (2.5k) | 2.11 GB/s     (2.0k)
+Write      | 1.34 GB/s     (2.6k) | 2.25 GB/s     (2.2k)
+Total      | 2.62 GB/s     (5.1k) | 4.37 GB/s     (4.2k)
+
+Geekbench 5 Benchmark Test:
+---------------------------------
+Test            | Value                         
+                |                               
+Single Core     | 1339                          
+Multi Core      | 4588                          
+Full Test       | https://browser.geekbench.com/v5/cpu/24001339
+
+ SysBench CPU 测试 (Fast Mode, 1-Pass @ 5sec)
+---------------------------------
+ 1 线程测试(单核)得分:          4128 Scores
+ 4 线程测试(多核)得分:          15992 Scores
+ SysBench 内存测试 (Fast Mode, 1-Pass @ 5sec)
+---------------------------------
+ 单线程读测试:          47411.71 MB/s
+ 单线程写测试:          27523.04 MB/s
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[把博客从Halo换成了Gridea]]></title>
+        <id>https://anya.moe/post/ba-bo-ke-cong-halo-huan-cheng-liao-gridea/</id>
+        <link href="https://anya.moe/post/ba-bo-ke-cong-halo-huan-cheng-liao-gridea/">
+        </link>
+        <updated>2026-01-04T14:15:40.000Z</updated>
+        <content type="html"><![CDATA[<p>这几天一直在折腾手上的几台机器，现在一个月的月费有将近40欧，所以想精简一下服务器。<br>
+所以我就想找个静态博客用CF Page托管。<br>
+直到昨天看到了Gridea这个静态博客系统，我非常喜欢这种简洁风格。<br>
+这里分享一下是怎么搭建的。</p>
+<h1 id="创建github仓库">创建Github仓库</h1>
+<p><a href="https://github.com/new">https://github.com/new</a><br>
+创建个username.github.io，username就是你用户名，其实也可以不这样子，仓库名随便取，只是没法用github pages而已，不影响部署到cf pages和vercel的。</p>
+<h1 id="申请token">申请token</h1>
+<p><a href="https://github.com/settings/tokens/new">https://github.com/settings/tokens/new</a><br>
+token时间选择永久，repo勾上，token只显示一次，记得保存下。<br>
+<img src="https://anya.moe/post-images/1767536709142.png" alt="" loading="lazy"></p>
+<h1 id="配置gridea">配置gridea</h1>
+<p><a href="https://github.com/getgridea/gridea/releases">https://github.com/getgridea/gridea/releases</a><br>
+自己根据客户端下载<br>
+支持mac，win，linux三大客户端<br>
+<img src="https://anya.moe/post-images/1767536718171.png" alt="" loading="lazy"><br>
+点击左边的远程，界面长这样子<br>
+选择github pages，<br>
+域名：你要绑的域名<br>
+仓库名称：刚刚建的github的仓库的名字:username.github.io这样子<br>
+分支：现在一般默认是main，自己看下你github仓库<br>
+仓库用户名：你github的user name<br>
+邮箱：你github的邮箱<br>
+令牌：刚刚第三步申请的token<br>
+cname这个不用github page啥的话不用管，要用的话填你要绑的域名</p>
+<p>然后保存，再点下检测远程连接的，显示成功的话就ok了</p>
+<p>点击最左边这个按钮，点进去，有个站点源文件路径，那就是gridea的配置文件了，要备份的话直接打包上传到网盘，或者直接整个坚果云或者onedrive啥的同步直接<br>
+<img src="https://anya.moe/post-images/1767536813001.png" alt="" loading="lazy"></p>
+<p>Gridea支持markdown，点击左边的文章，自己写就行了。<br>
+点击左下角同步，同步到你github。<br>
+如果没法同步的话，设置里又http代理设置，自己填写。</p>
+<h1 id="部署到各家平台">部署到各家平台</h1>
+<p>这里我只介绍Cloudflare和Vercel,Vercel的话国内访问速度更好一点，不过我喜欢放到CF。</p>
+<h2 id="cloudflare">Cloudflare</h2>
+<h3 id="点击workes-and-pages">点击workes and pages</h3>
+<p><img src="https://anya.moe/post-images/1767537060600.png" alt="" loading="lazy"><br>
+创建应用程序，选择pages，连接到git，连接到github账户，选择你刚刚创建的那个github仓库。<br>
+然后点开始设置， 保存并部署。</p>
+<h3 id="设置自定义域">设置自定义域</h3>
+<p>输入你在gridea里填的域名<br>
+<img src="https://anya.moe/post-images/1767537195125.png" alt="" loading="lazy"><br>
+然后点激活域再等会就ok了<br>
+浏览器打开你的域名就可以访问了。</p>
+<h2 id="vercel">Vercel</h2>
+<p>打开Vercel，选择使用Github登录。<br>
+点击右上角singup。<br>
+点击add new project,选择你的github仓库，再点击import。<br>
+<img src="https://anya.moe/post-images/1767537454775.png" alt="" loading="lazy"><br>
+然后点击deploy直接部署<br>
+<img src="https://anya.moe/post-images/1767537473972.png" alt="" loading="lazy"><br>
+然后就部署好了</p>
+<h2 id="设置自定义域-2">设置自定义域</h2>
+<p>默认的vercel.app被墙了，输入你在gridea里填的域名。<br>
+点击setting，选择左边的domains。<br>
+填写你的Gridea的域名，记下Vercel给的记录，然后到你的域名托管商那里添加就行了。<br>
+或者cname到cname.vercel-dns.com都是可以的。<br>
+Vercel的亚马逊aga到国内速度明显比其他的快，推荐这个部署，但是免费只有100G的流量，不过个人博客也够用了。</p>
+<p>本文改自：<a href="https://www.nodeseek.com/post-8624-1">https://www.nodeseek.com/post-8624-1</a></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【YABS】Netcup VPS 500 G11s JUN25]]></title>
+        <id>https://anya.moe/post/yabs-netcup-vps-500-g11s-jun25/</id>
+        <link href="https://anya.moe/post/yabs-netcup-vps-500-g11s-jun25/">
+        </link>
+        <updated>2026-01-02T06:09:20.000Z</updated>
+        <content type="html"><![CDATA[<p>gb5出乎意料的好，单核居然有1000多分，比g9.5强不少。</p>
+<pre><code>Basic System Information:
+---------------------------------
+Uptime     : 0 days, 0 hours, 0 minutes
+Processor  : QEMU Virtual CPU version 2.5+
+CPU cores  : 4 @ 2246.624 MHz
+AES-NI     : ✔ Enabled
+VM-x/AMD-V : ❌ Disabled
+RAM        : 3.8 GiB
+Swap       : 0.0 KiB
+Disk       : 129.0 GiB
+Distro     : Debian GNU/Linux 12 (bookworm)
+Kernel     : 6.1.0-41-amd64
+VM Type    : KVM SERVER
+IPv4/IPv6  : ✔ Online / ✔ Online
+
+IPv6 Network Information:
+---------------------------------
+ISP        : netcup GmbH
+ASN        : AS197540 netcup GmbH
+Host       : Netcup KVM VIE
+Location   : Vienna, Vienna (9)
+Country    : Austria
+
+fio Disk Speed Tests (Mixed R/W 50/50) (Partition -):
+---------------------------------
+Block Size | 4k            (IOPS) | 64k           (IOPS)
+  ------   | ---            ----  | ----           ---- 
+Read       | 198.89 MB/s  (49.7k) | 1.13 GB/s    (17.6k)
+Write      | 199.42 MB/s  (49.8k) | 1.13 GB/s    (17.7k)
+Total      | 398.31 MB/s  (99.5k) | 2.26 GB/s    (35.4k)
+           |                      |                     
+Block Size | 512k          (IOPS) | 1m            (IOPS)
+  ------   | ---            ----  | ----           ---- 
+Read       | 518.10 MB/s   (1.0k) | 487.52 MB/s    (476)
+Write      | 545.63 MB/s   (1.0k) | 519.99 MB/s    (507)
+Total      | 1.06 GB/s     (2.0k) | 1.00 GB/s      (983)
+
+Geekbench 5 Benchmark Test:
+---------------------------------
+Test            | Value                         
+                |                               
+Single Core     | 1063                          
+Multi Core      | 2751                          
+Full Test       | https://browser.geekbench.com/v5/cpu/24011006
+
+ SysBench CPU 测试 (Fast Mode, 1-Pass @ 5sec)
+---------------------------------
+ 1 线程测试(单核)得分:          3698 Scores
+ 4 线程测试(多核)得分:          10399 Scores
+ SysBench 内存测试 (Fast Mode, 1-Pass @ 5sec)
+---------------------------------
+ 单线程读测试:          41769.91 MB/s
+ 单线程写测试:          24208.71 MB/s
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Pulse探针的安装与升级]]></title>
+        <id>https://anya.moe/post/pulse-tan-zhen-de-an-zhuang-yu-sheng-ji/</id>
+        <link href="https://anya.moe/post/pulse-tan-zhen-de-an-zhuang-yu-sheng-ji/">
+        </link>
+        <updated>2025-12-29T04:59:46.000Z</updated>
+        <content type="html"><![CDATA[<p>前两天在论坛看到这个探针，非常符合我的审美，我非常喜欢这种简洁干净的风格。</p>
+<h1 id="pulse的安装">Pulse的安装</h1>
+<h2 id="一键安装">一键安装</h2>
+<pre><code>curl -fsSL https://raw.githubusercontent.com/xhhcn/Pulse/main/install-pulse-server.sh | sudo bash
+</code></pre>
+<p>脚本会自动：<br>
+✅ 检测系统架构</p>
+<pre><code>✅ 下载对应的二进制文件
+
+✅ 配置 systemd 服务
+
+✅ 启动服务并设置开机自启    
+</code></pre>
+<p>访问 http://YOUR_IP:8008 查看监控面板</p>
+<h1 id="pulse的升级">Pulse的升级</h1>
+<h2 id="先删掉原来的版本">先删掉原来的版本</h2>
+<pre><code>systemctl stop pulse-server &amp;&amp; sudo systemctl disable pulse-server 
+rm -f /opt/pulse/pulse-server /etc/systemd/system/pulse-server.service
+systemctl daemon-reload
+</code></pre>
+<h2 id="再次运行一次安装脚本">再次运行一次安装脚本</h2>
+<pre><code>curl -fsSL https://raw.githubusercontent.com/xhhcn/Pulse/main/install-pulse-server.sh | sudo bash
+</code></pre>
+<p>升级完成！</p>
+<h1 id="pulse的删除">Pulse的删除</h1>
+<h2 id="客户端删除命令">客户端删除命令</h2>
+<pre><code>systemctl stop pulse-client &amp;&amp; systemctl disable pulse-client &amp;&amp; rm -rf /opt/pulse/pulse-client /etc/systemd/system/pulse-client.service
+</code></pre>
+<h2 id="服务端删除命令">服务端删除命令</h2>
+<pre><code>systemctl stop pulse-server &amp;&amp; systemctl disable pulse-server &amp;&amp; rm -rf /opt/pulse /etc/systemd/system/pulse-server.service
+</code></pre>
+<p><a href="https://github.com/xhhcn/Pulse">Pulse 项目地址</a></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[折腾了几天 终于把论坛搭建好了]]></title>
+        <id>https://anya.moe/post/zhe-teng-liao-ji-tian-zhong-yu-ba-lun-tan-da-jian-hao-liao/</id>
+        <link href="https://anya.moe/post/zhe-teng-liao-ji-tian-zhong-yu-ba-lun-tan-da-jian-hao-liao/">
+        </link>
+        <updated>2025-12-21T04:55:45.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="httpswwwshizukululumoe"><a href="https://www.shizukululu.moe">https://www.shizukululu.moe</a></h2>
+<h1 id="建设论坛的初衷">建设论坛的初衷</h1>
+<p>这个月初我在雫るる人事物语的快速索引 看到了 lulu 与大家的 28 年之约非常感动，于是通过 AI 和朋友的帮助下做了这个网页用于记录。<br>
+有Luu民朋友在评论区说希望可以加点新的功能，我起初准备加上弹幕功能或者聊天室的，想了几天决定不如给lulu搭建一个非官方的粉丝交流论坛吧。<br>
+因为我不是IT领域工作的，也不会敲代码，接触VPS只有半年，只会搭建个小博客什么的，所以这几天确实花了不少时间，在AI和朋友的帮助下，最终使用Flarum完成了本论坛的搭建。<br>
+关于域名，我做28年之约的时候没想过会做这个论坛，所以那时候用了.net（因为.com已经被注册了），在决定做论坛的时候发现剩下的可选域名就剩下.org .fan .club，但是最终还是选择了.moe。.moe域名是源自日语“萌え”的新通用顶级域名（gTLD），专为日本动漫（ACGN）、御宅族文化爱好者、创作者和相关产业设计，寓意着喜爱、可爱和热情。它由日本注册局Interlink运营，简短易记，提供独特的网络身份标识，适合动漫社区、周边网站和商业品牌。所以我觉得.moe更加贴合论坛主旨。</p>
+<h1 id="论坛的相关信息与配置">论坛的相关信息与配置</h1>
+<p>论坛的服务器我选择了Netcup VPS 1000 G11 iv PRO MNZ JUL25，配置是4xAMD EPYC-Genoa Processor 8G内存 512G硬盘，我很喜欢Netcup家的机器，这台服务器是论坛大佬送的。</p>
+<p>关于论坛主题呢我选了很多，从刚开始的子比，到后面的Discourse，我最终是选择了Flarum。这个主题看着更加简洁一点，我很喜欢这种简约风，我的博客主题也是这种风格。</p>
+<h1 id="关于后续论坛的运营和管理">关于后续论坛的运营和管理</h1>
+<p>我前两天就把论坛搭建完成了，现在一直没有开放是因为我想经过lulu的同意之后再进行推广，lulu目前的意思是她担心论坛的评论功能会使得话题的走向难以控制。没有明确同意，也没有明确反对，我们还在等待lulu的回复。如果lulu不同意的话那咱的论坛就得关闭了。</p>
+<h1 id="我想说的话">我想说的话</h1>
+<p>最后我想说的是，我很清楚论坛就算后面可以运营，也不会有什么人气的，因为就算是lulu的贴吧也都没什么人气，但是不管那么多，现做了再说嘛，之前有朋友问我网站能活多久？是不是一时兴起做的？你真的有技术有能力运营下去吗？我可以给大家一个肯定的回复，这些网站我一定会坚持做下去的，这个论坛不是终点，后续我会继续学习新的项目，为Luu民提供新的内容和互动体验，敬请期待！</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Flarum论坛网站搭建的一些插件和主题]]></title>
+        <id>https://anya.moe/post/flarum-lun-tan-wang-zhan-da-jian-de-yi-xie-cha-jian-he-zhu-ti/</id>
+        <link href="https://anya.moe/post/flarum-lun-tan-wang-zhan-da-jian-de-yi-xie-cha-jian-he-zhu-ti/">
+        </link>
+        <updated>2025-12-17T04:44:57.000Z</updated>
+        <content type="html"><![CDATA[<p>安装中文语言包</p>
+<pre><code class="language-bash">composer require flarum-lang/chinese-simplified:dev-master
+</code></pre>
+<p>页眉页脚自定义</p>
+<pre><code class="language-html">&lt;div class=&quot;footer&quot; style=&quot;padding:0 15px;&quot;&gt;
+    &lt;p style=&quot;text-align: center;&quot;&gt;
+        Copyright © 2023 by &lt;a style=&quot;padding: 0 3px;&quot; href=&quot;[https://blog.zeruns.com/](https://blog.zeruns.com/)&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;blog.zeruns.com&lt;/b&gt;&lt;/a&gt;
+    &lt;/p&gt;
+    &lt;p style=&quot;text-align: center;&quot;&gt;
+        声明：除非另有说明，否则本站内容依据 &lt;a rel=&quot;license&quot; href=&quot;[https://creativecommons.org/licenses/by-sa/4.0/deed.zh](https://creativecommons.org/licenses/by-sa/4.0/deed.zh)&quot; target=&quot;_blank&quot;&gt;CC BY-SA 4.0&lt;/a&gt; 许可证进行授权，转载请附上出处链接。
+    &lt;/p&gt;
+    &lt;p style=&quot;text-align: center;&quot;&gt;
+        ⛵️🐳 &lt;a href=&quot;[https://blog.zeruns.com/](https://blog.zeruns.com/)&quot; target=&quot;_blank&quot; style=&quot;font-weight:bold; color:transparent;background-image:linear-gradient(to right,#0ea5e9,#2563eb);-webkit-background-clip: text;background-clip: text&quot;&gt;Zeruns&lt;/a&gt; | 💡 &lt;a href=&quot;[https://blog.zeruns.com](https://blog.zeruns.com)&quot; target=&quot;_blank&quot;&gt;About&lt;/a&gt;
+    &lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+<p>OXO主题</p>
+<pre><code class="language-bash">composer require yannisme/oxotheme
+</code></pre>
+<p>Fluent-Flarum主题</p>
+<pre><code class="language-bash">composer require dalez/fluent-flarum
+</code></pre>
+<p>FoF User Directory：为论坛添加用户目录页面，方便浏览和搜索用户。</p>
+<pre><code class="language-bash">composer require fof/user-directory:&quot;*&quot;
+</code></pre>
+<p>FoF Filter：帮助论坛管理员自动审核和过滤用户生成的内容。</p>
+<pre><code class="language-bash">composer require fof/filter:&quot;*&quot;
+</code></pre>
+<p>FoF Links：让你在论坛的导航栏、侧边栏或页脚添加自定义链接，方便用户快速访问论坛内外的重要页面。</p>
+<pre><code class="language-bash">composer require fof/links
+</code></pre>
+<p>SEO：专注于 SEO 优化。</p>
+<pre><code class="language-bash">composer require v17development/flarum-seo
+</code></pre>
+<p>Discussion views：显示每个话题 (讨论) 的浏览量，让用户和管理员一目了然地看到社区内容的受欢迎程度。</p>
+<pre><code class="language-bash">composer require michaelbelgium/flarum-discussion-views
+</code></pre>
+<p>Echo showfloor：像百度贴吧一样显示楼层。</p>
+<pre><code class="language-bash">composer require wanecho/showfloor:&quot;*&quot;
+</code></pre>
+<p>Emoji Picker：让用户在论坛中方便地插入表情符号，与论坛自带的 Emoji 插件冲突，需要先禁用默认的 Emoji 插件。</p>
+<pre><code class="language-bash">composer require clarkwinkelmann/flarum-ext-emojionearea
+</code></pre>
+<p>Fancybox-Plus：为 Flarum 论坛提供图片浏览增强功能，安装之后点击图片将会弹出一个优雅的图片浏览界面。</p>
+<pre><code class="language-bash">composer require tohsakarat/fancybox-plus
+</code></pre>
+<p>FoF Sitemap：为 Flarum 论坛提供站点地图 (Sitemap) 功能，提升网站的 SEO 表现。</p>
+<pre><code class="language-bash">composer require fof/sitemap
+</code></pre>
+<p>UserCard UID</p>
+<pre><code class="language-bash">composer require datlechin/flarum-usercard-uid:&quot;*&quot;
+</code></pre>
+<p>Auto Post Badge</p>
+<pre><code class="language-bash">composer require litalino/flarum-auto-post-count-badge:&quot;*&quot;
+</code></pre>
+<p>Top Bar Extension</p>
+<pre><code class="language-bash">composer require litalino/flarum-top-bar:&quot;*&quot;
+</code></pre>
+<p>我的留档</p>
+<pre><code class="language-html">&lt;link href=&quot;[https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css](https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css)&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;[https://lf3-static.bytednsdoc.com/obj/eden-cn/hjeh7pldztwm/dyfont/index.css](https://lf3-static.bytednsdoc.com/obj/eden-cn/hjeh7pldztwm/dyfont/index.css)&quot;&gt;
+
+&lt;div style=&quot;display: flex; gap: 20px; font-family: 'DouyinSans', sans-serif; font-weight: 600;&quot;&gt;
+
+  &lt;a href=&quot;[https://space.bilibili.com/387636363?spm_id_from=333.1387.follow.user_card.click](https://space.bilibili.com/387636363?spm_id_from=333.1387.follow.user_card.click)&quot; 
+     target=&quot;_blank&quot; 
+     rel=&quot;noopener noreferrer&quot; 
+     style=&quot;color: #FFB6C1; text-decoration: none; font-size: 17px; display: inline-flex; align-items: center; gap: 6px;&quot;&gt;
+     &lt;i class=&quot;ri-bilibili-line&quot;&gt;&lt;/i&gt;
+     &lt;span&gt;哔哩哔哩&lt;/span&gt;
+  &lt;/a&gt;
+
+  &lt;a href=&quot;[https://live.bilibili.com/21013446?broadcast_type=0&amp;is_room_feed=1&amp;spm_id_from=333.1387.to_liveroom.0.click&amp;live_from=86002](https://live.bilibili.com/21013446?broadcast_type=0&amp;is_room_feed=1&amp;spm_id_from=333.1387.to_liveroom.0.click&amp;live_from=86002)&quot; 
+     target=&quot;_blank&quot; 
+     rel=&quot;noopener noreferrer&quot; 
+     style=&quot;color: #FFB6C1; text-decoration: none; font-size: 17px; display: inline-flex; align-items: center; gap: 6px;&quot;&gt;
+     &lt;i class=&quot;ri-live-line&quot;&gt;&lt;/i&gt;
+     &lt;span&gt;直播间&lt;/span&gt;
+  &lt;/a&gt;
+
+&lt;/div&gt;
+</code></pre>
+<p>Extension Manager</p>
+<pre><code class="language-bash">composer require flarum/extension-manager:&quot;*&quot;
+</code></pre>
+<p>FoF Best Answer</p>
+<pre><code class="language-bash">composer require fof/best-answer:&quot;*&quot;
+</code></pre>
+<p>FoF Byobu</p>
+<pre><code class="language-bash">composer require fof/byobu:&quot;*&quot;
+</code></pre>
+<p>FoF Gamification</p>
+<pre><code class="language-bash">composer require fof/gamification
+</code></pre>
+<p>FoF OAuth</p>
+<pre><code class="language-bash">composer require fof/oauth
+</code></pre>
+<p>FoF Polls</p>
+<pre><code class="language-bash">composer require fof/polls:&quot;*&quot;
+</code></pre>
+<p>FoF Upload</p>
+<pre><code class="language-bash">composer require fof/upload:&quot;*&quot;
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[弄了一个与雫るる28年之约的倒计时网页]]></title>
+        <id>https://anya.moe/post/nong-liao-yi-ge-yu-na-ruru28-nian-zhi-yue-de-dao-ji-shi-wang-ye/</id>
+        <link href="https://anya.moe/post/nong-liao-yi-ge-yu-na-ruru28-nian-zhi-yue-de-dao-ji-shi-wang-ye/">
+        </link>
+        <updated>2025-12-07T04:39:36.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="网址wwwshizukululunet">网址：<a href="https://www.shizukululu.net">www.shizukululu.net</a></h2>
+<iframe
+  src="https://player.bilibili.com/player.html?bvid=BV1u1421f72H&autoplay=0"
+  scrolling="no"
+  border="0"
+  frameborder="no"
+  framespacing="0"
+  allowfullscreen="true"
+  style="width:100%;height:400px;">
+</iframe>
+<p>前几天在 <a href="https://www.bilibili.com/opus/926613110798680069">雫るる人事物语的快速索引</a>看到了lulu与大家的28年之约非常感动，于是通过AI和朋友的帮助下做了这个网页用于记录。</p>
+<p>2024年2月29号星期四，我和我最喜欢的二次元主播一起吃饭了。</p>
+<p>哎呀，她的名字叫什么？我想不起来。</p>
+<p>然后打开手机，现在几乎都没人用的哔哩哔哩平台，打开看看，现在发布新视频的人也很少，所有的视频播放量都不会超过50万。哇，原来我们年轻时代，那么疯狂玩的哔哩哔哩，现在变成这样子，哈哈。</p>
+<p>我们的青春都在这里，啊好怀念。</p>
+<p>我28年之前一直吃肯德基的那个女生的名字是叫什么来着？</p>
+<p>我打开自己的关注列表，然后找找那个很奇特的很有特色的很有眼熟的白发的二次元女生。</p>
+<p>我刷了刷了手机，就发现她的头像，哇原来她是叫雫るる啊！</p>
+<p>对呀，我们那些年一起追的那个孩子，名字是原来是るる啊！</p>
+<p>他有点心疼，但是不知道为什么这么心疼，因为有可能他觉得他的人生中，追るる的时间是最美好的。</p>
+<p>他擦了自己的眼睛，去打开るる的首页，るる的动态更新已经停止了，几十年，是几十年。</p>
+<p>我随便点，看看她的最新的动态的评论里面，很多人发了“るる恭喜毕业！希望你的人生中有很多很多幸福”，然后我随便点了，按时间看评论。我发现很多人今天发的评论：“るる，我们28年前一起吃了肯德基，今天我突然想起你了，现在你过得怎么样？那个时候一起追るる的朋友们，现在过得怎么样？”有好多好多以前Luu民的评论。</p>
+<p>我的心跳突然加速，这个感觉就是那些年一直一直追るる的时候的那个非常热心的感觉。</p>
+<p>然后我也开始写评论：“るる，我也刚刚突然想起来，28年前的2月29号星期四，一起吃肯德基的那个可爱的女生，现在你过得怎么样？现在旁边有谁呢？希望你一辈子都幸福！”</p>
+<p>我发了评论之后去看看她的以前发的视频，她的最后的唱歌视频，她的最后的Lu过你的城市视频，她的最后的玩游戏的视频，她的最后的斗地主的视频。</p>
+<p>我看着看着眼泪停不下来，我现在都不知道るる过得怎么样，只能希望她每天过的开开心心。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[雫るる的历程]]></title>
+        <id>https://anya.moe/post/na-rurude-li-cheng/</id>
+        <link href="https://anya.moe/post/na-rurude-li-cheng/">
+        </link>
+        <updated>2025-12-06T04:36:59.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="2019年">2019年</h1>
+<p>5月23日，出现在Kanna的B站LOL直播中。（可以说Lulu是在B站出道。）</p>
+<p>6月11日，bilibili首次直播。（Lulu实际上是从B站出道的虚拟UP主）</p>
+<p>6月29日，正式加入雪貂女学院。</p>
+<p>7月17日，拖了一个多月才在B站发表自我介绍视频。</p>
+<p>9月4日，开启新专题“雫るる的烦恼咨询室”。</p>
+<p>9月15日，为了减肥在B站举行肥宅演唱会。减肥成绩：突破500公斤。成为千斤大小姐……</p>
+<p>9月19日，参加bilibili举办的活动《寻梦异世镜-第二期：镜像》。节目规则为从四个Lulu中识别真伪（其他三人实际上是Kanna、美人老师、漂亮老师）。很不幸的是，在这次B站活动前夕Lulu和Kanna都生了病，不过两人都坚持演出。</p>
+<p>9月21日，B站粉丝1万达成。并联动Kanna、白音小雪和花园Serena玩《Ultimate Chicken Horse（超级马鸡）》，这是Lulu首次与雪貂以外的Vtuber联动。[3]</p>
+<p>9月28日，联动kanna和库特菌玩吃鸡。</p>
+<p>10月3日，Lulu在直播中宣布退出“雪貂女学院”。虽然很难过，但Lulu表示自己“现在非常幸福（产仔会长痔疮）”。</p>
+<p>10月5日，直播两个多小时后下播，然而这个下播画面却持续了将近三个小时，在经历了洗澡（？）、刷牙、生草鬼故事、半夜唱歌等一系列行为后，登上了直播人气总榜榜首……</p>
+<p>10月10日，以真人不露脸[注 1]的形式直播开封中国网友送给自己的礼物。随后去WC……</p>
+<p>10月16日，直播料理（章鱼画面有如克苏鲁神话一般的恐怖，Lulu因此获得“克苏Lu”的称号……）[5]途中厚着脸皮请求网友们给自己打钱（￣▽￣）以及否认自己是A cup。</p>
+<p>10月26日，给B站网友们画生草头像，甚至连自己也不放过。[6]并在2020年7月11日的十万粉丝纪念回第二次给网友画头像。此外lulu自己绘制了一个大阪世博会的会徽头像框[7]</p>
+<p>11月7日，直播进行重大发表宣言！受到邀请参加了12月21、22日的成都bw！おめでとう!</p>
+<p>该重大发表内容仅持续了十分钟左右就变成了与dd们的跳脸雀魂……</p>
+<p>11月8日，私下玩lol自闭后，发现实际上是别的群友进行了背刺群友A在跟别的女人vtb安堂いなり开黑噔 噔 咚（而且被发现后又开了一把！），气得想整活了十分钟后突击直播。</p>
+<p>直播内容为赐死dd群友A雪--酱--!，并且排查lol好友中的dd。在排查未果时，经过热心网友弹幕干啥啥不行 背刺第一名的指引下，发现群友B甚至、仍然、正在跟别的vtb开黑甚至在观战中又发现了好友C...我们受过专业的训练，我们不会笑，除非...哈哈哈哈哈[8]，在q群中总结到“クソddしかいないです！”并被国际版qq翻译为“tmd只有dd!”（灵 魂 翻 译）。</p>
+<p>所以请注意：lulu同学本人会亲自下场抓DD 方式包括但不限于查自己B站粉丝的头像、id、关注列表，查QQ群里DD的个人资料、QQ空间，查游戏好友的id、对战记录。。（be one with lulu）</p>
+<p>随后一转中文学习，并在收到游戏邀请时果断拒绝并暴言kuso dd game LOL。在中文学习中达成四舍五入2w粉丝数！（lulu真的很努力！偉い！继续加油！）</p>
+<p>因为把中文题中的“我和她没再交往了”念成“我和lulu没再交往了”而引来一波取关，看到粉丝数不停减少的lulu狂笑之后使用了楚楚可怜的哭泣攻势熟练的假哭之后，粉丝数不减反增（dd们都是蹭的累玩够了）。</p>
+<p>11月10日，看完酣畅淋漓的fpx3：0 G2后直播英雄联盟，并于英雄选择时连续三把自信锁定盲僧（你就是Fpx-Tian？），并在dd们的帮助下获得了二胜一负的战绩虽然首局(指英雄联盟生涯以来)被对方中野打得自闭。</p>
+<p>其后，在下播环节心血来潮，播放群内变态dd（你们这是什么群啊，真是害人不浅啊！）饱含感情的、撕心裂肺的露易丝定型文，并在反复处刑时发出清楚?的笑声（她 在 狂 笑）。</p>
+<p>11月11日，进行突进直播提前30分钟通知也算吧，大概（在今年也是绝赞的单身时长等于年龄的光棍节，只有lulu的直播还有一丝温暖），直播内容为中文学习（双11直播学习，太鉴了）。进行了完整的hsk2考试，并达到了55/60的高正确率（中国語が少しずつ上手になりました、本当に偉い！）。</p>
+<p>在下播环节，lulu对此前粉丝群中某些dd的ky行为以及当日动态底下的dd宣言进行了点名批评（所以说不要给我跳女孩子的脸啊kusodd！）,并总结到“だからあなたは独身なんですよ”（所以说你才会是单身啊）名 言 警 句（哦，我也是啊，那没事了）。</p>
+<p>11月13日，为后天的俄罗斯方块联动做准备，直播练习打块（并不出所料在短短几局内陷入自闭）。随后抛下直播间的观跑众去洗澡，并且一转歌回还有沙雕图鉴赏大会。</p>
+<p>11月14日，直播做黑暗料理珍珠奶茶四喜丸子，过程中发生若干生草行为。</p>
+<p>包括但不限于：</p>
+<p>1.被别群不知真相网友认为是茶叶蛋的珍珠(?)</p>
+<p>2.有如活物两度想要从碗中蠕动逃离的不明物(笑)</p>
+<p>3.疑似喝下珍珠奶茶后许多分钟无声的maro(危)</p>
+<p>4.做好料理后总是会惯例说一声“你先吃吧”，然而由于中文不标准，听到观众的耳中就变成了你像JB,观众纷纷狂打问号或草，有弹幕表示舰长或提督先吃，但也有不少对线抖M弹幕“你再骂?”让人哭笑不得。</p>
+<p>并在摔坏道具时突破10万直播人气……</p>
+<p>11月15日，联动DD头子七柠玩俄罗斯方块，输了的一方必须接受惩罚游戏。不负众望地，在对手放了个太平洋的情况下，Lulu还是被虐得很惨。</p>
+<p>在被要求进行“病娇台词”的环节，Lulu问柠哥为什么要去看别的女人……</p>
+<p>联动期间多次用自己的清楚暴言震撼七柠。</p>
+<p>“明明是lulu输了，总感觉是柠哥在做惩罚游戏ww”（感谢温柔的柠哥）</p>
+<p>11月17日，lulu竟然成功的以手机直播的方式进行早安直播，指刚起床一边刷牙，一边直播。</p>
+<p>直播中，lulu为自己做了鸡蛋卷作为早餐（一看就是特别会做饭的女人，原来平时都是在整活吗）。</p>
+<p>之后由于某土豪陌路的提督，lulu给大家做了糊掉的pancake。（为什么给我们做就是黑暗料理啊喂！！！）最终登上小时总榜第一。</p>
+<p>11月19日，在直播间对网友们进行喜欢A cup还是F cup的灵魂拷问，同时因放出疑似不良照片lulu馒头cup.jpg而被超管警告。</p>
+<p>11月24日，进行了久违的LOL直播，并夸口要让大家见识劫辅助的厉害（企业级理解）。虽然三局游戏都获得了胜利，但是都没有获得良好的游戏体验指分别被水友的辅助劫、ad悠米、辅助索拉卡打到自闭。（据说后来欧服出现了不少劫辅助，引领版本潮流kana?）</p>
+<p>11月26日，直播练习中文听力，由于在听写句子时出现了很多书写错误，被观众们调侃成当代仓颉、lulu造字。</p>
+<p>学习结束后展示了自己为bw应援物的画的画，并且初次加入了luku的设定你说的那个luku到底是不是...。</p>
+<p>直播结束后打赏榜的前两位分别是“ShizukululuAnti”和“MEAdaisuki”，十分生草。其实是两位铁gachi在整活。</p>
+<p>12月1日，在群里投票最终决定以“迫害”为主题进行杂谈直播。尽管挂着杂谈的标题，却在直播中完成了日语教学、中文学习、迫害群友、唱歌、泡面、跳舞、游戏等一系列活动（不愧是自由的女人）。</p>
+<p>12月3日，在第二次开箱直播中收到许多生草以及贵重礼物。直播人气首次突破20万（第3小时露胖才发现这一点，并高兴得一阵呱呱“Lulu牛逼”后就直接下播……）。</p>
+<p>展开Lulu收到的礼物</p>
+<p>12月8日，进行了可能是v圈最血腥（物理意义）的b限直播。直播内容为制作英国著名黑暗料理——仰望星空死不瞑目派。</p>
+<p>制作期间展现了各种意义上都很惊人邪门的料理力：明明意外地会刮鱼鳞并去除内脏鱼骨去骨技术极为精湛，被观众夸赞到&quot;每处理三条鱼就少一条鱼&quot;，却不会进行鱼头鱼尾的除血去腥……</p>
+<p>还有包括但不限于：只加入一点点油且不热锅、却加入大块不切丁的黄油、感觉随时会伤到手的用刀手法、致死量的调味料放入……</p>
+<p>在糊墙的过程中死活不加水疯狂加牛奶，磨刀，切鱼头，唱歌，捡狗屎。导致石油佬打赏了五百元请求lulu拿去点外卖。</p>
+<p>并且在等待烘烤的过程中一转考研学习直播间[注 3]，学习过程相当认真“实” （众所周知，学习的第一件事是打开手机用QQ搜题）。</p>
+<p>在接近下播时，通过表达对大家的爱（脑控）,以2.7w粉丝的数量达成了百人舰队(还有五个提督)的成就！　おめでとう！</p>
+<p>同晚，深夜发动态说到“一股子腥气...睡不着 为什么要在房间里卖鱼呢？”。因为睡不着所以只能仰望星空，从各种意义上来说料理都相当成功。</p>
+<p>因在直播中穿着粉丝送的IGjkl队服，直播结束后登上某著名英雄联盟讨论贴吧。</p>
+<p>在制作仰望星空派的料理直播中留下了名场景：空无一人的直播间案发现场，满桌子的血迹以及孤零零的凶器指鱼的血和菜刀，以及时不时传来的汩汩流水声伴随着少女的轻声哼唱......“悲しみの向こうへと　辿り着けるなら~”</p>
+<p>12月12日，发起了突击直播，是难得一见的“正经”歌回。</p>
+<p>虽说是歌回，在直播途中刚结束一首歌（カワキヲアメク）之后唐突水群，看到众DD们都在愉快的和自己互动，又想起了进来被自己抓获的DD们，退一步越想越气，在直播中大呼“吃醋！”，并声泪俱下，楚楚可怜，模样十分凄惨。</p>
+<p>在直播中唱了《粉红色的回忆》、《我只在乎你》，被粉丝亲切的称为“日本邓丽君”。除此之外，为了处刑某粉丝还唱了《芒种》；也唱了收集于粉丝的《干物女》。</p>
+<p>12月15日，心血来潮的进行了恐怖游戏《青鬼》直播，因在命名时给主人公取名为“F CUP”导致游戏一点也不恐怖，反而狠生草。却因为实在是技术太菜半途而废。一转无声自闭LOL。</p>
+<p>12月18日，出席樱樱火和一翔剑(注)主持的节目《超级工具人杂谈日语梗》</p>
+<p>自我介绍后声明DD斩首。然而一翔剑立刻跳脸说自己是DD，于是Lulu伸手想打他（但是打不到哦）。</p>
+<p>在中日neta交流的过程中，樱樱火教lulu和一翔剑：有人说“我去洗澡了。”就是委婉的拒绝了与说话对象继续交谈的意思。于是DD们大呼：“全完了。”但被DD们先下手为强,在luku在QQ群出现的时候都会一起刷“我去洗澡了”来表示“还我清楚的lulu！”</p>
+<p>当晚，在樱樱火约Lulu一起洗澡的这天晚上于B站动态中留下了“初吻还在的老母猪骗子雫るる的洗浴中心交流木毛抖M养老院”[注 4]的神秘文字，无人能明白此句含义（似乎包括露胖自己）。</p>
+<p>次日再次留下该金句，被网友问及“文字真的大丈夫嘛？”时Lulu回复“有很大的问题”，该网友一脸懵逼，于是祝Lulu2021年新年快乐！</p>
+<p>12月20日，已经到达成都的lulu在22时左右发动态，通知大家稍后会进行直播。</p>
+<p>23时26分直播间开始运作，但在几秒钟之内光速下播。23时28分直播间“梅开二度”，并又在几秒钟后光速下播。两分钟后，直播间“帽子戏法”开始了第三次直播（三回啊三回！），不过在几分钟的直播调试设备之后再次重连。重连调试好设备后lulu竟然挂着直播间去洗澡了直播间安静的连bgm都没有，是对众dd进行的放置play。</p>
+<p>直到23时58分，lulu终于刷着牙开始了正式的直播。诚实的女人，果然说今天直播，就今天直播。同时在直播中成功用中文向酒店工作人员表达吹风机损坏的情况，迈出了中文交流的一大步。喂喂↑，对→不↓起↑，我的 吹风机坏了，foo↑foo↑魔性程度堪比窝窝头</p>
+<p>12月21日，参加BW成都站活动，主持人为从出生就开始单推Lulu的张京华（众lulu民表示终于看到了lulu与DD们现场对线）。年度汉字为“新（爱）”。</p>
+<p>12月24日，直播做圣诞蛋糕。在做奶油的时候搅拌器把牛奶搅拌的到处都是危，键盘，危。蛋糕里有香蕉夹心哦ghs意味。</p>
+<p>12月28日，在直播MC的途中发现了某dd在自己家地下建造的巨型海王高达。阿库娅雕像受惊的dd们为了讨好lulu，使用TNT将此高达炸毁。这就是反抗军的末路吗？(虚空联动hololive)之后还表演了枪杀dd。</p>
+<p>12月31日，用中文写信感谢中国网友对自己的支持。</p>
+<h1 id="2020年">2020年</h1>
+<h2 id="上半年">上半年</h2>
+<p>1月1日，在B站上传了自己精心打扮的新年和服照片，虽然照片很好看但丧心病狂的粉丝们却在讨论Lulu的胸部是否A Cup以及她是否Debu的问题……。</p>
+<p>1月2日，新年的第一次直播，和大家一起查询hsk2级成绩。以189/200的成绩轻松高分通过。(不过本人对不是满点通过表示遗憾。)</p>
+<p>之后的直播中lulu翻出了姐姐的BL同人本，并在手机直播的黑屏挡镜头下深情朗读书中十分不妙的情节。此时正值直播间人气超过冯提莫登上直播小时总榜第一名，进来的路人表示十分不解，场面十分生草。</p>
+<p>1月3日，不愿透露姓名的某dd同学在B站私信对Lulu表达“我一生中两次学习走路，一次是小时候，一次是那天走向你。”被露胖当场贴出此君的Vtb关注列表并怒斥“男人都是骗子”。</p>
+<p>此君随后为了讨好Lulu删掉了其他关注的Vtb并在Lulu动态下评论辩解，但Lulu却说：狗改不了吃屎。</p>
+<p>随后，此君发QQ空间动态，表示“女人太可怕了”（注：此君是女粉。），并附上了将“取关”的Vtb转为悄悄关注(注)的截图，又被群友发现并打小报告。惨，dd，惨</p>
+<p>1月28日，突击直播，开幕歌回三连之后一转杂谈，并开始迫害群友麻衣与一石油佬。</p>
+<p>樱岛麻衣は最高です(简称麻衣)“我一直以为输掉游戏是因为有麻衣，后来发现不是这样。麻衣对不起(中文)”麻衣家今天的饭系列(详见lulu小视频投稿)</p>
+<p>随后打开游戏记录发现【lulu：0/11；麻衣：0/15】lulu:“哈哈哈哈哈哈。”由于被害人麻衣不在直播现场，lulu心想这多没劲啊，于是到处寻找麻衣，甚至在QQ群里发起QQ电话并@麻衣，可麻衣仍不见踪影。</p>
+<p>lulu:“麻衣？麻衣不在？在干嘛？(看弹幕)啊，麻衣在冲？那没事了。他是男人呢。(重复)”(中文语)</p>
+<p>不久之后，麻衣在群里出现并一头雾水，霎时群里充满了欢快的气氛。麻衣只好来到直播间送了礼物。lulu:“啊，麻衣，对不起。(笑，重复)”并在群里再度发起QQ电话与麻衣进行语音连线。奈何麻衣只会简单嗯啊，羞于语音吃桃。本人语:我是因为工地日语……直播现场十分生草。麻衣败下阵来只能再次交上红包，最终登上当日土豪榜。lulu:“麻衣，你的红包是我的。(重复)”直播结束后的感谢环节，lulu再次向麻衣道歉(跳脸)“麻衣，对不起，你不能Carry”</p>
+<p>又在直播中，lulu突然想起好久不见直播间石油王loliking(化名)，于是向众dd询问，众dd纷纷表示他去dd了。没几分钟后loliking忽然匆忙来到直播间顶着祭丝的牌子(不言而喻)lulu“loliking！新年快乐，团团圆圆。红包拿来！总督拿来！”于是loliking只得奉上两个小电视。“我一直相信你哦，loliking！”于是该石油佬最终登上土豪榜第一名。由此新年定型文形成:“新年快乐，团团圆圆。红包拿来！总督拿来！”</p>
+<p>1月25日，使用大量中文祝大家新春快乐（恭喜发财，红包拿↓来。红包拿↓来，总督拿↓来。(同时)新的一年，新的整活，请多关照。），并表示希望大家不要出去约会。随后以“庆祝春节”的名义直播吃麻辣火锅，把所有的麻辣火锅底料一口气加入到锅中，锅底一片辣椒红。不愧是在成都吃红底火锅的女人。</p>
+<p>下播前再次突破100人舰队并要求最后3个上舰的人搞3P。</p>
+<p>1月26日，在学习直播中做了HSK3级考试卷，合格。之后在沙雕DD们的怂恿下去做了日语N1等级考试的试题却完全不理解题目的意思而国民性存疑。（意味わからない！）对此lulu表示：我是中国人，在日本留学，9月回国。</p>
+<p>1月30日，54岁老女人lulu在qq群里到处发老年人家庭微信群常用的土味表情包，引起众管理不满，于是大家提议禁言lulu。不料lulu竟伪装成一位管理去各个粉丝群发表情包，被该管理当场抓获并禁言30天以示威吓。</p>
+<p>一会儿后为lulu解除禁言，却未曾想lulu并未反省，反倒装作就是该管理。该管理不慌不忙，改成lulu的头像和id，并学着lulu平日的发言。群友心领神会纷纷当起了舔狗，没有人理伪装成该管理的lulu，场面一度十分生草。lulu:“。。。我只能爬”并改回头像id，宣告了这一次的失败。此事件也被看做lulu54岁老女人的又一力证。</p>
+<p>2月1日，直播中lulu询问向众人:“为什么曾经那么温柔的大家变成了现在这个样子呢？”（指天天在QQ群中、弹幕上对线）并翻看过去的视频寻找原因。翻到了自己出道视频的lulu:“这是谁？好恶心？哈哈哈哈哈(经典巫婆笑)”在寻求为什么发生了这么大的变化的过程中电脑突然崩溃，耻辱下播。</p>
+<p>2月4日，在学习直播中突破4w关注，并叕获得了百人舰队。</p>
+<p>展开本次直播出现了以下要素：</p>
+<p>2月6日，发布了直播预告，赢一局LOL就直播。大约一个小时以后“すいません今日はやめます”今天摸了“はい　さよなら”爽到，拜了。果然，粉丝们个个是先知</p>
+<p>2月9日，虽然元宵节已经过去一天，料理小达人(大嘘)lulu给大家直播做汤圆。在一片欢声笑语中，lulu做出了用黄油做的芝麻汤圆和鲜肉汤圆(煮汤圆的汤中还加了葱花（中华料理风评被害)88888888并一边品尝一边说“好吃”然后跑去厕所吐出来，“还不赖哦”又一次去吐出来，“不难吃哦”再度跑厕所。坚持吃掉自己料理的lulu是vtb之鉴 。</p>
+<p>在直播中，lulu特地给dd们读群规(禁止dd)，可众dd们似乎只听到了(禁止背刺群友)。对一直和自己对线的“anti”们，lulu表示“这都是一群傲娇桃太郎吧？”直播途中第五次登上百人舰队并再次要求最后的三个舰长3p，并接连获得两次小时榜NO.2。我们是亚军！我们总是亚军！我们一直是亚军！</p>
+<p>2月14日，dtlulu陪大家一起过情人节哦。(指召唤师峡谷约会自闭，进行单身歌会。)</p>
+<p>直播的最后，lulu做了《自分の取说作りたい人に100の质问》，让大家更加的了解lulu。其中不乏一些生草回答例如早起必做之事:上厕所。也透露出自己最喜欢的热血漫画是《全职猎人》，最喜欢的少女漫画是《人渣的本愿》。2020年10月25日的直播中又提到了自己很喜欢《NANA》。</p>
+<p>2月20日，拖了很久终于买了新的麦克风支架，开幕歌回，十分清楚。</p>
+<p>当时舰长数卡在98人，某房管石油王阿飘连着续期了3个舰长(续期不会增加舰长数)，引得lulu歌唱到一半笑出了巫婆声。（唱这首歌之前，lulu笑的声音十分可爱，大家都在刷“笑声suki”，结果歌唱一半笑出巫婆声，这时大家刷“舒服了”。果然这样才是lulu。）lulu对此解释道:“百人舰队的最后三个舰长不是要3p吗，我注意着看到他连送了三个舰长，哈哈哈，那他自己3p好了。”</p>
+<p>直播途中lulu突然来了电话，于是lulu竟然直播打电话。真实系虚拟主播，i了。</p>
+<p>直播中，lulu问大家“听说在中国约会男生要拿钱，这是真的吗？”在得知是事实之后“我喜欢miumiu的包包”疯狂暗示在有人打了礼物和SC之后，lulu:“哈哈，vtuber舔狗。”“我吐了”（群友都教了什么啊！）之后终于第五次到达了100舰长，其中就有知名lulu群桃王，lulu点名3p环节对他十分不舍“祝贺你，要过得幸福哦。(哭腔)”</p>
+<p>此次直播还进行了厕所RTA挑战。成绩是68s。对于计时和“干杯”的dd，lulu表示kimo。</p>
+<p>歌回结束后lulu向大家介绍“新”lulu服mc，可由于不明原因，3600+RTX2060竟然卡成了PPT(君の帧数 not good)。在莫名其妙的解决了问题之后，lulu给大家表演了斩首dd，dd被火焰炎上的极其惨烈。之后便欲草草下播。可事与愿违，ed突转，切回了画面，原来lulu被直播间石油王TBKMEA杀掉了。静止的画面放了一分钟，场面十分生草。lulu回过神来利用传送定位追杀该石油王，可惜君の回线 not good，追了好一会儿，甚至误伤了路人，再次tp才追上复仇。最终lulu得以光荣下播。</p>
+<p>2月25日，进行了名叫《365连休开始了 【我错了】》的突击直播其实只是放假休息了，当有dd问起的时候lulu表示自己被开除了，并假哭的十分真诚，但随后表示“你上当了”。大概是受疫情影响lulu表示“最近的日本没救了”“没有口罩了”“转卖的坏人很多”“小心日本人”战狼发言。并且在23日发了动态截图，向大家展示了最近的状况。</p>
+<p>在直播中，lulu聊到了最近直播不知道做什么，联动的话又不会说话。并会回忆起了之前联动PUBG时跳伞摔死。借此原谅了“京晚”没有发出邀请。</p>
+<p>lulu（luku）在直播中幻想有人对她说“我有你当vtb的证据，如果你不想让别人知道的话，你就乖乖听我的。”虽然很可怕，但lulu表示“lulu是抖M，所以没关系的哦。”</p>
+<p>在dd们在直播间说出anti言论时，lulu“今年急剧增加的是利用互联网进行的欺凌现象。”直播中，lulu观看了自己的二创（anti）视频，并被吓到直呼“害怕”但dd们发现lulu竟然和“雫るる假anti”已互关。</p>
+<p>一不小心点到了OP播放，回来后直播间右侧的“打钱名单”重置了，于是lulu：“礼物榜没了，大家能不能再打一次钱啊？没有嘛？啊，有啦，谢谢。”dd们心甘情愿的上当。在一群dd反复的取关和关注操作下 ，lulu的关注数还是在直播时涨到了44444人，lulu见机光速下播“44444来了，我很累了，再见朋友们。”</p>
+<p>在感谢土豪环节中，lulu当场抓获某土豪，竟然是做anti视频的其中之一。大叫后的沉默中，草，生了出来。并在直播最后，lulu（luku）还是说出了那个群友们一直推荐的游戏的名字“bokibokiclub”（原名“dokidokiclub”中文名心跳文学部），十分治愈。</p>
+<p>2月28日，发布标题、视频简介（简介是歌词）全日文，视频格式错误导致只能用flash播放器播放且不能移动进度条的黑屏翻唱视频(此视频为lulu自制)《アイロニ》。</p>
+<p>2月29日，以擂台赛的形式举办首届“lu宝杯”LOLsolo大赛。胜者是渐散人心。</p>
+<p>比赛结束后，lu宝亲自下场与裁判P某solo，结果被裁判不买出门装单杀。</p>
+<p>后又跳脸挑战群“饭王”（事迹见lu宝动态及投稿小视频），结果由于心急失误而告输。</p>
+<p>2020年3月4日，进行了国产恐怖游戏《港诡实录》（前两章）的实况直播，并于3月15日达成结局（此处指前三章的结局）。</p>
+<p>展开（以下内容涉及轻微剧透）</p>
+<p>3月8日，lulu的55岁生日会！[32]虽然元旦已刚过54岁生日，不过由于是真正的生日会，干脆就变成55岁了</p>
+<p>lulu的生日直播时收到各种礼物：</p>
+<p>黑人祝福视频（lulu表示：筋肉，我好了）；</p>
+<p>MC祝福PVlulu落下了感动的泪水，并表示“自己整天都在LOL，都没怎么玩MC，真的十分抱歉（泣）”；</p>
+<p>中国粉丝做的同人Galgame（由于lulu出场过晚，导致lulu一直在问“lulu在哪？”，dd们：“lulu在直播”于是形成世界名画《lulu在直播》），同时在玩同人Galgame的过程中关注量突破5万（不过本人后来才发现）；</p>
+<p>回忆向祝福PV等（她真的哭了）。</p>
+<p>“膨胀”成了麻将桌的露胖</p>
+<p>也获得了直播以来第一个总督和初见红sc（强 石油佬 强）。由于直播间的Q版lulu形象形象会随着打赏变胖，直播中Q版也顺理成章的“膨胀”成了一个麻将桌。</p>
+<p>透露自己近期正在练习会话，想看看粉丝能不能听懂，照课本读了几段对话，然而读到柠檬茶却哈哈大笑，让人摸不着头脑。用极其可爱的声音读了“小哥哥买单”，当看到弹幕里刷“小哥哥没钱”的时候标准、快速、无情的说了句“小哥哥没钱？那没事了，再见”（众小哥哥：你为什么这么熟练啊？！）[36]</p>
+<p>在最后的MC烟火大会和带lulu参观PV里的后，在感动的氛围下结束了这次生日直播。</p>
+<p>3月10日，联动著名MMDup主，整活系vup冰糖（众lulu民：小心bt！），进行了深度的中国沙雕文化交流。在直播中，两人对各种沙雕表情包、猫猫（花园Serena）的创作的迷之二创以及各自的奇怪XP性僻进行了深度的讨论。</p>
+<p>联动中lulu在多次询问n1，但被拒绝并威胁“你烤肉组没了”后拿出了压箱底的表情包烤肉组组长的莲花cos照，一转迫害。</p>
+<p>冰糖表示lulu十分清楚（冰糖上当了），觉得和lulu十分聊得来。于是两人成为了好朋友，并约定好以后在中国也要保持联系（即使是半夜33点通电话也可以呦~）。</p>
+<p>在联动结束后，lulu在直播间表示“你们一直告诉我小心冰糖，小心变态，现在我总算理解了。bt真的很bt啊！”（塑料姐妹情）</p>
+<p>3月20日，直播中表示最近正忙于学习，宣布自己即将参加hsk3级考试。lulu对最近很少直播感到抱歉，并且真情流露《雫るる的幸福理论》。(后来由于疫情原因考试推迟，lulu将直接参加hsk四级考试。)</p>
+<p>3月22日，lulu进行了一次早安直播，刚刚睡醒的lulu又一次直播刷牙。直播中给大家唱英文歌曲，可十分口胡，根本听不出是英文。lulu自暴自弃的想要唱字母歌，结果发现自己连字母歌都跟不上唱不好。(字母歌中的英文句子唱不出来）之后还是唱了日文歌曲。于是弹幕提问“主播日语不错，在哪里学的？”于是lulu用中文回答“谢谢，我在日本留学，在日本学习的。”于是lulu给大家献唱中文歌曲，可明明就是在放原唱，根本听不到lulu唱。当日，lulu以视频的形式参加了bilibili的活动“春日V鉴赏会”（其实就是只投了自己的出道视频）。</p>
+<p>白上吹雪和夏色祭观看lulu的出道视频后，觉得Lulu很清楚，并表示AWSL。她们上当了！</p>
+<p>随后午睡醒来的Lulu得知了此事并表示“睡觉的时候自己被公开处刑了”。</p>
+<p>3月26日，直播学习，。可这套题目过于偏门和生草，DD们也在中文学习中玩的不亦乐乎。选字填空： D 了。直播中lulu的LOL一直再响，终于在把错题弄懂之后可以下播打lol啦！</p>
+<p>3月28日，凌晨一点突击被窝歌回。软软的lulu从开幕清楚到结束，配合着全程黑屏的画面让人浮想联翩。晚些时候在冰糖的50w纪念直播中发表祝贺视频并表示“我们都喜欢ghs！”。对此，冰糖表示“我和lulu初次联动的时候总有人说很不妙，但是我们的直播间没有被ban哦。”之后lulu也在动态里晒出了自己为冰糖献上的画作。</p>
+<p>4月2日，进行了长达4小时的写作业（学中文）直播，并在直播中抱怨“作业实在太多了，想直播都没时间，最后只好直播写作业。”在直播途中，由于某爷爷P的黄SC，突然开始了黄SC吃桃大会。对此，lulu表示这群dd（dt）不懂浪漫。暗示红SC浪漫</p>
+<p>4月7日，lulu直播了《MOTHER SiMULAToR（带娃模拟器）》，由于该游戏指示不明确，所以lulu有很多生草行为（比如把baby扔进水槽里来洗尿裤）。但似乎没意识到自己做了什么的lulu还在问“我做的怎么样？想要和我结婚吗？”</p>
+<p>游戏中，lulu遇到了bug，无法移动，于是因为游戏要求，急着上厕所的lulu在墙角脱了出来。（虚拟YYUT？）</p>
+<p>直播中直播间出现了钓鱼弹幕“主播是日本人吗？”lulu看到该弹幕并用中文回答“我不是日本人，我学习日文。”十分生草。</p>
+<p>直播中由于种种不妙的ghs发言，lulu问大家会被ban吗。大家都回答说“大丈夫”，于是lulu对直播的尺度产生了疑惑。语气羞涩的问大家“你还要吗？这句话的意思大家都懂吗？这种话题也没关系吗？虽说如此，后来还是及时停止了该话题。</p>
+<p>4月14日，读评论直播，评论大多是生草问题和吃桃现场。</p>
+<p>4月20日，lulu以《我和你的五分钟》为标题，进行了对线直播，并单方面宣布自己的胜利。真的只直播了五分钟。因为之前承诺过每天都要直播，“lulu大概五分钟”持续了四次</p>
+<p>5月3日，在休息一周之后，进行了做寿司直播（虽然就是把三文鱼片和饭团捏在一起）。直播中lulu表示最近学会了“芜湖，起飞”和“啊这”这种梗，并求教类似的梗。直播间弹幕刷起了时下最流行的“上流”，lulu在得知上流就是贵族的含义后举一反三，表示自己很下流……</p>
+<p>5月7日，lulu以让大家检查她的学习成果为主题进行了直播。lulu表示自己已经“学自闭了”，最近每天都对着刚买的观赏植物说“甜甜的话语”。但lulu的有些读音还有待加强，比如直播的练习中，总把“书”读成“猪”，把“热”读成“日”，把“我想要养狗”读成“我想养yagoo”，十分生草。yagoo血压又拉满了。并且在直播中招募“clash”（英雄联盟的游戏模式）队友。</p>
+<p>5月11日，直播学习汉语拼音，lulu跟着幼教视频一句句跟读，十分生草。最终，粉丝数达到了8w。</p>
+<p>5月14日，lulu在QQ群里晒出了某日本很有名的零食，群友们都表示没有见过，于是lulu直播吃该零食。由于该零食成糊状，需搅拌，于是果不其然的出现了白灼的黏液洒在键盘上的情形。和做圣诞蛋糕时如出一辙，可怜的键盘。在享用过各种零食后，lulu继续阅读自己的日记提高自己的中文水平。并在下播前学会了“啊这。。”和“不会把？不会吧？”终于还是学会了yygq。</p>
+<p>5月17日，lulu直播玩恐怖游戏夜勤事件[47]，但是游玩过程中只是被稍微地吓到，而且最后打出了“bad end”（lulu：“？？？我死了吗？？？”），lulu直呼“粪作”。由于lulu没有存档，为了看看游戏的“true end”lulu问大家“其他vtuber也是这样的吗？”，说罢打开鹿乃的通关实况视频，并把声音关掉，用自己的身体挡住视频中的鹿乃进行“虚空联动”霸占视频。最后还是忍不住问大家“想不想看（鹿乃）”，在部分dd回答“想”之后，lulu表示“你是人吗？”真实女友系vtuber，在线吵架。</p>
+<p>展开（以下内容涉及轻微剧透）</p>
+<p>5月20日，在520甜蜜的节日中和《恋爱循环》的甜蜜氛围下，lulu进行了“重大发表”——新衣服揭露将在5月23日23点！此后翻找历史记录看了二创视频，但似乎没有领会到其中的梗。历史记录中还有日本up主小野寺AMIKUN的中文学习心得视频。看了小野寺的视频，lulu愈发感叹自己的中文水平还有很多不足，一转学习。</p>
+<p>5月23日，新衣服发布会。新衣服质量异常之高，融合了白丝，银发，眼镜，宠物，猫耳等可爱要素，也融合了dd斩首，目力lulu，接头霸王，下巴学院，debu，豆芽等生草要素，当然也保留了传统艺能敬礼。在展示新衣服的过程中，人气值不知不觉的达到了30w。</p>
+<p>当天晚，lulu新衣服的建模师涵涵直播，lulu跑去上了舰长。</p>
+<p>5月24日，由于看到鬼灭之刃的网图，lulu决定尝试玩亚索（灶门炭治郎饰），dd们使用阿卡丽（灶门祢豆子饰），泰隆（富冈义勇饰），乌迪尔（嘴平伊之助饰），伊泽瑞尔（我妻善逸饰）组成“鬼杀队”。由于第一天尝试亚索，lulu惨遭滑铁卢。在自己的直播间下播后被京华张锤子叫到overidea直播间突击联动。这也是lulu首次出现在overidea的直播间。</p>
+<p>刚接入连线时，京华并没有准备lulu的形象，配合着lulu的整活，二人表演了一段“双簧”。之后lulu唐突的表示“我去下厕所”就断开连麦。再回来时lulu的新衣服也出现在了overidea的频道上。</p>
+<p>直播中京华一直在表示lulu是一个“对线主播”并暗示直播间里的“初见”lulu平时不会“清楚”的。而lulu也不失众望地在京华让她做中文介绍时大声喊出“我喜欢dt！”在被误会了是喜欢dd后lulu还在澄清“我不喜欢dd，我喜欢dt！”</p>
+<p>当然两人的联动少不了向京华请教中文，在lulu的提问下，京华教了lulu“锤子”的含义。联动过程中京华也尝试和lulu搞中文联动，可lulu实在是害羞，表示自己的中文还不行。</p>
+<p>京华在提到lulu的logo时，lulu表示自己出售的周边不仅没有卖出去，而且被dd私信问“这个太土了，有没有别的啊？”十分生草可怜。</p>
+<p>为了迎合初见，lulu表示自己要清楚一点，但锤子一直在暗示。于是创造出了一个和京华从幼儿园就是玩伴，两人一直是挚友的人设对此锤子表示：信不信由你们。在提到“混沌势力”后，京华正式的向lulu介绍了“hoplive”[51]。lulu羡慕的表示自己没有太多的vtuber朋友，不知道怎么和其他vtuber交朋友，对此请教了京华。京华教lulu，让lulu尝试去和联动过的vtuber连麦看电影来加深感情。对此露露表示好色哦，我都不做这些的。</p>
+<p>突然直播间里有人上舰长，京华竟然当着lulu的面发出了亲吻舰长的声音，但被lulu无情的打断。于是重新有亲吻一次，对此lulu表示呕！不会真有人被锤子亲还高兴吧？一时间直播间里两人对着大笑不止。（之后又有舰长上舰，再度复刻。lulu“啊啊啊啊”的大叫起来，直播间中的dd纷纷表示“怎么没有声音了？”随后lulu要求京华做出一个更浓厚的吻，但被京华转移了话题。）京华解释说其实他的粉丝都是傲娇，其实喜欢得很呢。dd们也趁机纷纷打sc对锤子告白。</p>
+<p>联动的结尾京华对lulu进行了评价“^我还一直觉得lulu是像高小姐像mea酱那种，好像第一次看上去很清楚，第二次看就感觉不清楚。但是看起来她是不清楚的主播，但是现在看起来她是，至少跟我比起来她是好清楚啊。京华是相当清楚的，跟我比起来还这么清楚的话……这次直播看起来lulu感觉有点意外的清楚啊……”</p>
+<p>虽说这次联动只有40多分钟，但内容却十分生草。结局是lulu以一句“我去洗澡了。”唐突断开连接结束联动，留下寂寞的京华（之后立刻无缝“联动”米娅）。</p>
+<p>5月29日，由于日本宣布解除疫情紧急状态，lulu终于可以享受生活了！为了庆祝，登上了网站“category”和大家一起挑选可爱的新衣服。每当lulu看上一件衣服，某dd阿飘就打出相应金额的sc，实属dd之鉴。之后lulu观看了航拍中国，每看到一处美景lulu都表示想去。看到山峰上的房子，震惊了理解不了如何出行的lulu。中国功夫暴露了。</p>
+<p>6月1日，使用了新的OP,ED,背景，BGM，联动樱樱火，w丘丘w，ATM西米酱，一起玩Overcooked胡闹厨房（分手厨房）。通过这次直播lulu也从一开始的自闭状态，渐渐地开始着急指挥，有了沟通。（但还是不敢中文交流）</p>
+<p>联动过后lulu化为lu宝，戴上了小黄帽，叼起了奶瓶。每当有石油佬打sc，lulu就会“歪比歪比歪比巴卜，妈妈！”。在房间里充满了男妈妈之后lulu表示：“哈？我已经56岁了哦。”</p>
+<p>lulu表示最新学会并喜欢用的词语“就这，行不行啊？”，“懂得都懂。”，“别念了，别念了。”，“太真实了。”，“怎么说呢？”被朋友说很不好，不要用，并问粉丝为什么粉丝群的大家都在说这些话呢？对此，有极端dd表示：“因为我们都是变态！”</p>
+<p>6月5日，再次直播洗键帽。洗键帽时将键帽装在玻璃碗里，被刚进入直播间的dd误会成了龟苓膏。在安装时发现有几个键子的字母被磨损，于是用白马克笔自己写上了字母。不愧是你。在下播时讨论联动问题时大家纷纷刷冰糖，lulu表示：“不要再房间里刷别的vtuber，但冰糖可以。”灾备问道京华时，lulu表示“可以哦毕竟锤子事男的嘛。”</p>
+<p>6月11日，lulu出道一周年。先行发布了一周年几年翻唱《勾指起誓》（日语翻唱和中日双语翻唱其中双语翻唱在直播前已经登上B站首页推荐）</p>
+<p>一周年全熟</p>
+<p>直播中lulu从自己的第一条动态开始，和大家一起回忆成长的经历。在看到“拆礼物”回自己穿着滑稽套的照片时，lulu表示现在想要炭治郎的cos服。</p>
+<p>在切换猫耳时，lulu忘记了怎么操作，并当场询问涵涵爹，涵爹打了sc表示：“俺忘了”。lulu表示自己在看涵涵的直播，并表示涵涵直播COD很水可lulu似乎没有资格评论涵涵的FPS水平。</p>
+<p>在直播的最后lulu和大看家一起了lulu程序组（就是之前的游戏组的大佬）给lulu做的个人主页[54]。并读了主页中的粉丝留言，十分感动。此次的个人主页也是突然决定并且在两天之内做好的。只能说程序组大佬，强！</p>
+<p>此次直播中lulu获得了娱乐小时榜第1，小时榜第2，并且再次到达3P百人舰队。</p>
+<p>下播后Lulu在动态里发表了自己写给中国粉丝的信。</p>
+<p>6月14日，以手机直播的方式进行了杂谈点歌会，直播开始不久就因为iPhone手机过热而断开连接，之后用冰袋给手机进行了物理降温不愧是你，并乞讨：“希望手机没事”之后澄清是看QQ群里一直有人说希望XX没事，自己跟着学会的。由于是全黑屏直播，有很多dd进直播间询问为什么是黑屏，lulu表示：“钓鱼，懂得都懂”还有dd表示屏幕中映出了帅哥，lulu表示：“骗人可以，别骗自己。”直播中lulu唱了很多歌，其中《小幸运》这首歌lulu完美的跟着原唱唱了下来，可可爱爱，直播间里的dd纷纷表示：“变gachi了！”此外lulu还提到有一位15岁的粉丝参加英语竞赛的作文写了lulu，并私信发给了lulu。可发的是图片，lulu却看不懂英语……lulu：“日本人，小笨蛋。”</p>
+<p>6月15日，直播学习中文，练习听力。当听到“材料”时，lulu不明白什么意思于是请教Siri。Siri：“菜鸟……”十分生草。</p>
+<p>6月23日，lulu直播看b站的土味视频下饭，在看到lbw的鬼畜视频后发现了斗地主这个中国国民级纸牌游戏。于是在没接触过斗地主且不懂规则的情况下直接开始游戏。不愧是你。第一局上来就点了超级加倍（慈善），然后痛失好局。可受到发牌员的眷顾，手中把把是好牌，每局都有炸弹，但她并不会用，甚至打出了拆炸弹的操作。但lulu上手异常之快，仅仅第三局就以地主的身份“春天”了另外两家。发牌员也是老dd了。之后为了学习斗地主的规则，lulu翻阅了不少lbw的视频并查找到了日文版的教学（但是汉字太多很难看懂），在很长时间的询问和查阅后才明白了基本玩法。可此时lulu已经输光了所有的欢乐豆（包括每日赠送。）[56]老慈善家了。（在此之后进行了多次的斗地主直播，并发布了一系列视频，虽然学会了“快点吧，我等的花都谢了”，和“送阿姨一杯卡布奇诺”可却没学会怎么打牌。（恼）</p>
+<p>之后lulu突然想到还没拿lol的首胜，但又转念一想“这游戏赢不了”（此处为推测）。于是发表出人生哲理般的言论“……游戏这东西对生命有什么意义呢？不过是浪费时间罢了？学习才是正确的……”后来以某ddP头的SC解读开始了对线。“还不是因为自己赢不了，能赢那还有那么多话 建议自我反省为什么lol那么菜^^”lulu则喊到：“你个废物剑姬！（Noob Fiora）”到了最后lulu表示确实是自己菜，这游戏玩不了了，还是MC好玩（然鹅直至此时lulu仍然很久没有直播mc）。然后以该dd表示“好啦好啦，别骂了，下次继续一起玩，我来C我来C，包赢好吧”收尾。</p>
+<p>在看土味环节，lulu看了伪音大佬戏耍男网友的视频，吹唢呐的视频，和卢本伟的鬼畜，并觉得鬼畜很有趣点了好几个相关推荐。后来在找斗地主教学的时候随手点相关推荐当BGM，还点到了哲♂学鬼畜。帕秋莉♂GO！（然而他本人并不懂鬼畜和哲学，只是随手点进来的。）</p>
+<h2 id="下半年">下半年</h2>
+<p>7月4日，和其他63位虚拟主播一起联合发表了【2020高考加油】来自64位虚拟UP主的高考应援</p>
+<p>7月7日，在直播中达成10W关注。</p>
+<p>7月11日，进行了10w粉纪念直播——为dd们画头像。在这次直播中lulu的直播间竟然在小时总榜上超过哔哩哔哩晚会（当时正在举行官方活动——bilibili夏日毕业歌会）。此后一度被称为背刺bilibili的女人</p>
+<p>7月12日，玩了恐怖游戏纸人，由于一上来就直接尝试噩梦难度，导致白给循环，后来一转Osu!。</p>
+<p>7月16日，lulu在动态发起了投票——今天的直播。在投票中表示今天会做“高考日语”的题目，并发出“如果错一题及以上 则在以下四个选项中任选一项完成。如果lulu全对，则第一个提出要惩罚lulu的麻衣进行带着项圈自拍的惩罚。”的挑战。在直播中lulu二倍速播放听力，并将听力部分限时15分钟作答题目。其结果是——做错了最后一道题目。由此，lulu遵守大家投出的惩罚——摸鱼半个月。[60]dd的心思，懂得都懂。</p>
+<p>7月18日，直播拯救变红的C盘，其结果是发现有一个T的硬盘并没有使用。最终在dd们的帮助下，d盘，生了出来。lulu放《生日快乐歌》以庆祝d盘的诞生。</p>
+<p>7月26日，联动朋友虚假的自宅警备员，不愧是你，一起玩Apex英雄，频频白给，（有dd表示泡面还没泡好，竟然已经结束了四局……）及其下饭。此次直播进行了五个半小时，堪称折磨。</p>
+<p>8月2日，带大家“云”游东京，为大家介绍了东京各地不同的习俗。当然包括那种地方啦（指gay区）。</p>
+<p>8月9日，进行了“老娘来答题辣”的直播，来回答之前在动态收集的问题（伪棉花糖回）lulu“赶紧给老娘问问题不然老娘周日就不播了”。</p>
+<p>幼稚的dd向lulu提问鸡兔同笼问题，lulu直播为大家计算，结果得出结论：“有-12只兔子，47只鸡。”反物质兔？后来检查多次才发现符号看错了……不愧是你</p>
+<p>有“anti”向lulu询问cup，lulu当场贴近镜头，开始了奇怪的抖动。妹啊，对A是摇不起来的啊。</p>
+<p>在被问道“lulu为什么开始做vtuber？”“lulu有没有什么目标？“的时候，lulu回答：“我做vtuber是熟人介绍的。”“想要成为中文最好的vtuber。”</p>
+<p>有奇怪的dd想知道lulu的XP，抖M的lulu回答：“我想被打。我想被喜欢的人殴打。但被讨厌的人殴打的话会报警的。”妹啊，你已经要被网警盯上了。而反问dd们，dd们则纷纷表示自己是win7/win10，不用XP。</p>
+<p>桃子怪：“lulu什么时候嫁给我？”lulu：“来世。”</p>
+<p>问：“lulu最近有没有学到什么有趣的中文？”答：“给老娘死！”</p>
+<p>在看到某知名舔狗麻衣的提问时，lulu承接之前的提问：“你是GG？还是MM？还是舔狗？”</p>
+<p>8月13日，为了迎接即将到来的考试，进行了学习直播。在弹幕的怂恿下购买并直播玩了糖豆人。lulu：“啊，已经是十二点了（日本时间），最后一把。”然后又玩了十余把才下播。从此lulu迷上了这个游戏，之后也多次直播玩糖豆人。</p>
+<p>8月23日，发布了首个个人单曲《♡因为我是雫LULU酱♡雫るるちゃんだから》</p>
+<p>8月25日七夕节，单身狗lulu配单身狗dd们一起度过。在玩糖豆人自闭之后，lulu开始看“恐怖视频”。</p>
+<p>中途吃饭期间，dd们表示想看看lulu的晚饭（泡面），lulu表示自己没穿衣服不能开摄像头。</p>
+<p>在sc对线环节，某dd发sc表示：“一直很很喜欢看你的直播，加油！canna！”大概是拼错了kanna吧，d都能d歪来？看着满直播间刷屏的“kanna”lulu：“难不成我收了小学生的礼物（sc）真是太对不起了。”yygq开始了某金主sakurai表示：“以后不会再有了 ^^”后lulu连忙表示：“sakurai桑，你是特别的，懂得都懂。”舔狗系vtuber。</p>
+<p>之后lulu开始点歌台模式，唱了几首歌后就变成了“中文音乐鉴赏”（周杰伦常驻）。</p>
+<p>9月9日，半歌回半杂谈回。开幕雷击听群友语音。之后再唱《不得不（debu）爱》之后，有群友在一群里语音唱了一小段，另一位群友语音表示“kimo”。恰巧luul直播听到以为在说自己。由于该句语音被循环播放十分“魔性”，lulu每清唱两局歌词后都放一边这个语音，十分生草。后来lulu开始回忆起从前，播放起曾经在QQ群里收藏的语音。</p>
+<p>此外lulu还在直播中玩起了“痛”梗，唱起了《unravel》。lulu的痛，你们懂吗？</p>
+<p>在直播最后，lulu查房涵涵，进行了一次别开生面的“母女联动”。两人并没有连麦只是互相在对方的直播间里交流。lulu做出各种涵妈赋予的“阴间表情”（并一直露出obs背景），十分生草。</p>
+<p>9月15日，又官方确认将会参加bilibili举办的虚拟主播LOL活动星沙杯，将与瑠奈、YUKIri、新月冰冰、慕斯Muse共同组成八支参赛队伍之一（特级厨师队TJCS）。</p>
+<p>9月24日，经过几天的角逐，虽然第一天露露、所在的TJCS队就掉入败者组，可经过五人的努力最终杀穿败者组来到决赛，拿到亚军。最后被HLG队碾压。不久后lulu直播查询hsk4级考试成绩。268点！！！（300分满听力92，阅读100满点，写作76）高分通过！在对比了中日语言的难度后lulu恍然大悟的表示：“中文很难日语很简单，所以应该是你们学日语不是我学中文吧？”老娘就是想站着，还把钱给整了.jpg</p>
+<p>lulu前一天发布动态让大家预测成绩，竟然真有大预言家！但评论区也有不少表示250的，lulu在发现并理解了250的意思后表示：“给我爬！”</p>
+<p>此次直播在瑠奈、慕斯Muse、YUKIri、新月冰冰四位好队友的舰长和礼物助攻下再次突破百舰！</p>
+<p>10月1日，直播试吃了中国月饼，表示喜欢吃五仁，不喜欢太甜的。</p>
+<p>10月5日，直播看TES对阵DRX的比赛。期间一直如往常一样，大喊大叫，十分活泼。</p>
+<p>10月11日，以嘉宾的身份和TJCS队的队员们出现在YUKIri的直播间一起玩动物派对，由于扮演了一只呆呆的鸭子头顶着lulu的id十分生草，被截图成为表情包流传于群中。</p>
+<p>10月21日，直播间标题：《禁止日语》。开幕雷击——lulu：“最近lulu粉丝涨的有点快，怎么回事？我很害怕。”lulu在承诺只说汉语后没多久就破功，说了日语。之后又急得说起了英语掩饰。她急了。其实lulu还没有想好整啥活，由于直播翻唱歌曲时的吉他听着十分真实，被大家误以为lulu会弹吉他，lulu赶忙（离开座位跑步声，去拿吉他）拿起了吉他自证清白。果然，lulu弹得吉他……有一股三味线味道在里面。别弹了，我聋了。以后常规的直播了斗地主，依旧既有戏剧性。你以为我这把稳了？诶，我输了。你以为我这把没了？诶，躺赢了。结果在充值没多久后又输光了所有的欢乐豆。</p>
+<p>直播中某P姓开头的男子打钱出现在了礼物榜，lulu：“P头说他讨厌舔狗，但是怎么说呢，他不知不觉都成了他最讨厌的东西。绝了。”随后播放量P某最近流行于Q群的经典语录：“爱你呦lulu，早点睡，晚安”。并顺带播放了另一经典麻衣：“我的眼睛已经离不开你了。”</p>
+<p>10月22日，进行了学习直播，看了《中国成语大会》，结果由于太难而耻辱关掉视频。然后学中文，有dd打sc表示：“你说中文向我奶奶说普通话一样，我想家时可以来看看你吗？”，于是lulu喜提孙子粉。在直播中，有dd发sc询问lulu都学了什么，lulu回答：“H的话。”直播结束时，再一次向给自己画过健全本子的石油佬讨要自己的本子。在此再次声明，这种东西真的不是粉丝群的人教的，纯主播个人行为，切勿上升至粉丝群。</p>
+<p>10月25日，棉花糖回（顺带着的15w纪念直播），在此次直播中lulu的舰队竟然扩充到了300人！直播中，lulu挑战一元二次方程（x^2+2x+3=0），结果用了神奇的算法算错结果（得出结果x=1/2）与之前请教东大前辈算出的积分题目形成强烈反差，整个直播间充满了欢乐的气氛。在被问到经典问题“你只关心你自己”时lulu回答：“但是我可以和袋鼠成为朋友。你可以吗？”堪称经典。</p>
+<p>10月28日，睡前直播，用中文读了宫西达也的儿童绘本《你真好》。两只恐龙——霸王龙和薄片龙的故事展现在dd眼前，配合着忧伤的bgm和lulu的哭腔，众dd纷纷泪目。</p>
+<p>10月29日，久违的和Kanna一起玩了糖豆人和夺宝斗地主。在玩糖豆人时，kanna十分熟练，而lulu太笨了，kanna总是迁就lulu。lulu在后面kanna就在原地等待，lulu被淘汰kanna就跟着退出，KNMT!。斗地主时，二人做队友互通有无，结果还是被某“路过的”字幕组组长天气给教训了一番。想开黑打劫DD们的分数,就先过我这关!</p>
+<p>10月31日，在午间进行学习直播。在发现某b站游戏区up尚在天国EX上了舰长后去天国的直播间查房，结果进行了一次梦幻联动。lulu表示自己看天国的直播，上面写着“今日目标：舰长0/3”于是展开了嘲讽，表示自己会去给天国上舰长，结果发现天国的“今日目标”已经达成了，lulu：“那算了吧。”天国（舔狗）说了“lulu，kawaii”后，lulu：“天国喜欢我？”于是lulu当场查了天国的关注列表。结果“政审失败”，当场“sayonara”。在这之后，lulu的舰队也终于突破了400人！</p>
+<p>10月31日一早，NGAVtuber综合讨论区推出与lulu的联动预热。</p>
+<p>11月3日，lulu本人出现在自己的nga专楼中。</p>
+<p>11月4日，nga放出了联动采访。</p>
+<p>11月6日，联动nga直播，直播中回答了nga中大家的棉花糖。</p>
+<p>11月8日，联动阳向心美，猫ゐ咲夜，凤玲天天，千草はな ，白音雪，佐久间眠，黑桐亚里亚，招福喵可，一起玩宇宙人狼。</p>
+<p>11月10日，由哔哩哔哩直播官方推送视频【雫るる_Official】表情大揭秘！能变长能变宽还能360度旋转？lu宝终于要混出头了！</p>
+<p>11月11日，lu宝生病发起了电台直播，在直播中达成了500舰队成就！并解锁了出道以来第二个总督！</p>
+<p>11月12日，仍在生病状态的lulu突击直播Osu!</p>
+<p>由于昨天（11日）的直播放在了电台区（见官方活动），总督老板承诺放在虚拟主播区会再续费一个。果然lulu又收获了一个总督。</p>
+<p>但出人意料的，lulu电脑中途死机，重启了电脑，总督记录消失，lulu的2d形象又瘦了下来。结果石油王竟然又续了一个！lulu两天收获了三个总督！</p>
+<p>被问到为什么osu这么厉害缺玩不好lol，lulu回答道：“lol需要脑袋，osu不需要，我没有脑袋。”</p>
+<p>被dd要求教osu时，lulu回答：“osu很简单啊，点点点点点，点就完了。”经典音游大佬发言，与另一音游圈经典“多练”如出一辙。</p>
+<p>11月13日，联动kanna，NoWorld，米蕾优，秋蒂Q ，白音雪，天辉おこめ，黑桐亚里亚，姬熊结璃，紫海由爱一起玩宇宙人狼。</p>
+<p>11月15日，作为神秘美少女，空降超电VUP官方直播间，与冰糖，YUKIri，瑠奈，木糖纯交流双十一的购物成果。</p>
+<p>11月26日，联动kanna，凤玲天天一起玩欢乐斗地主。</p>
+<p>12月5日，时隔9天，lulu终于复播了。lulu：这几天把海贼王从第1卷看到了94卷，不牛吗！</p>
+<p>开局生日歌，不愧是你，庆生系vtb。</p>
+<p>直播中lulu打开了一个《拼音打字练习网站》，结果成绩不能排进排行榜。于是让dd去改名“shizukululu”去“霸榜”。dd们不负众望没一会儿排行榜上就全是luu民了。不过其中也不乏一些antiid，比如“debululu”。该网站评级由E至S+，之上还有“神”级。不过之前只有人达到B级。没多久dd霸榜竟出现了S+级和神级。没三十年单身的手速我不信的。更有甚者是在dd们看到神级纷纷表示是脚本后，竟然真有dd用脚本改了分数排在了第一？！（这种行为是不对的，该dd没有用lulu作为id，不过也得到了lulu的批评。话说这脚本写的也太快了。）不久后在dd们的推荐下lulu也尝试了金山打字通2013。</p>
+<p>12月7日，由于不当行为（直球冲塔），达成在全部粉丝群中被禁言成就（大嘘）。</p>
+<p>起因是在聊天吹水时lulu突然发了一张某管理麻衣的图（并且是知道在该管理在线的情况下直 球 冲 塔 当 场 跳 脸），直接将其惹毛并理所当然的收到一份禁言大礼包粉丝不能冲主播塔，主播就可以冲粉丝的？（正论）</p>
+<p>然而lulu不知悔改，反而跑到其他几个粉丝群里继续发图并跳脸甚至把其他管理的塔也给冲了[注 5]，最终理所当然的在所有6个粉丝群都被禁言了。</p>
+<p>之后lulu在动态中无辜的表示“我做了什么不好的事情了吗”[69]拜托你做了什么你自己心里没点b数啊！，并且在禁言时长增加到12小时后表示很爽[70]，抖M无疑。</p>
+<p>在禁言取消后再次嚣张，称“为什么中途解除了？没有勇气吗”“杂鱼”，并将禁言一事写入日记中，扬言要建立第七个粉丝群[71]。</p>
+<p>12月12日，玩了你画我猜，该游戏被发现非常利于学习中文。</p>
+<h1 id="2021年">2021年</h1>
+<p>2月8日，参与了超级幸运星的12生肖的企划，角色是猪。官方石锤</p>
+<p>2月12日，发表了新衣服。</p>
+<p>2月27日，元宵节的第二天进行了做汤圆直播。</p>
+<p>3月8日，生日会进行了料理直播。</p>
+<p>3月14日，联动凤玲天天、真白花音一起玩apex。</p>
+<p>3月28日出席冰火歌合战</p>
+<p>4月7日，联动凤玲天天、真白花音、夏诺雅、美波七海组成白毛五人组打lol。</p>
+<p>5月22日，出席了凤玲天天的生日会。</p>
+<p>6月11日，bilibili推出了lulu主题装扮。同日投稿了二周年纪念中文翻唱《那些年》。</p>
+<p>7月9日，参加了bw与暗妃鲁咪蕾、美波七海进行了歌唱比赛，京华和神乐mea担任了评委，唱了《一路向北》险胜，胜利安可唱了《说爱我》。</p>
+<p>7月18日，参加了“宝哭大赛”，装做婴儿哭泣却大叫想吃麦当劳，十分生草。</p>
+<p>7月18日，终于参加了hsk5级考试。</p>
+<p>7月22日，姐姐首次出现在lulu直播间，两人声音十分相像一度让众luu民以为是同一人。然而姐姐歌力超强比lulu强。在lulu说中文后姐姐总是在复读，其中不乏一些奇奇怪怪的中文……在和姐姐合唱了《secret base》之后，姐姐独唱了《one last kiss》其实lulu唱了两句，拉了引得众dd立刻单推姐姐。直播的最后lulu和姐姐合唱了《lion》。最后还教姐姐中文“大家一起打钱”。</p>
+<p>8月14日，投稿了中文翻唱《for ya》。时值七夕节，当日直播lulu学习读牛郎织女的故事。其中不乏生草提问：“爹妈是什么？”，“牛牛能说话吗？”，“请老牛做/ 媒人，请老牛做是什么意思？”</p>
+<p>开播时有dd刷礼物，lulu：“还有吗？”有dd打sc但飘走的太快，lulu：“请打红sc”。有dd表示自己成功留学了，希望得到lulu的祝福，lulu激动了一阵子后：“祝你一路顺风”。</p>
+<p>由于是七夕节，lulu对一些常在直播间的dd进行了点名，发现很多人都不在（其实是直播间里的众dd检举有人不在）。甚至总出现在直播间的片哥（发小网址的）都不在。lulu：“约会还好，但是这个时间（北京时间十点）没回来的懂得都懂。”于是lulu愉快的学唱了《分手快乐》和《香水有毒》。在此次直播前lulu发布了新投稿《for ya》（lulu：我送你们七夕礼物了，我给你们唱了首歌，你们听了吗？），在直播中也再次现场演唱。PS：在直播的最后片哥终于也出现了和麻某衣一起</p>
+<p>8月16日，露露发起了#和lulu一起吃饭#，在直播中看大家分享的饭菜。当lulu看到某dd与女朋友牵手坐在桌前的照片当场破防并大声驳斥：“这绝对是自己牵自己的手！”，然而点开下一张情侣两人的合照后lulu再次破防。</p>
+<p>在看到某个dd拍的羊肉拌饭后，由于看上去过于好吃（流口水）被lulu质疑是网图。随后该dd发了30元sc澄清这是他自己做的，lulu当场宣布：“你是冠军，因为你花了30块钱所以你是今天的冠军。”屑，lulu屑。</p>
+<p>8月18日，发布了让大家猜测hsk5级成绩的动态，在直播中与大家一起见证，258分高分通过。（本以为没考好的lulu泪洒直播间。）后来lulu看动态下dd们的猜测，按时间排序看有很多“作弊”的dd，但竟然还有公布了成绩后还猜错的dd。lulu：没救了。</p>
+<p>9月4日，投稿了探店vloge ♡日本探店vlog①♡【富丽华】；♡日本探店vlog ②♡【大吉缘】；♡日本探店vlog ③♡【添好运】。</p>
+<p>9月6日，初见无题大鹅（大鹅模拟器），由于操作生疏流程不熟玩的十分“艰难”（生草）。但大鹅的叫声配合着这屑女人的笑声竟格外的和谐。</p>
+<p>9月9日，在直播中达成了30w粉丝！并终于学会了使用自动录播功能。</p>
+<p>9月10日，投稿了中文翻唱《失眠飞行》。</p>
+<p>9月11日，进行了30w粉丝纪念直播。</p>
+<p>9月19日参与虚研社女子茶话会，联动小希小桃、兰音、小柔。</p>
+<p>9月21日中秋，直播做了月饼，效果意外的不错？</p>
+<p>9月27日，进行了新衣发表回，但却出现了直播事故：lulu的形象无法加载出来。在dd们十几分钟的等待后lulu穿着新衣服出现在直播间。但……怎么这么大！就这样，lulu对着镜头gachi距离开始了lol游戏直播。草生。</p>
+<p>9月29日，投稿了新视频总结了自己悲惨的一周。[77]由于其有真实又生草又笨的像个猪一样。被dd们所流传嘲笑。</p>
+<p>10月3日，lulu开设了日语教室。《从五十音开始教dd们学日语》</p>
+<p>10月31日，投稿了中文翻唱《想想念念》。</p>
+<p>11月20日， 雫lulu使用浑身解数，在3小时内的apex中仍未吃到一次鸡，警钟长鸣。</p>
+<p>11月27日，lulu在宣布休息一段时间后时隔43天的复播回，她带着新的直播间背景主题和ed[注 6]回来了，发起了语音征集【11月27日lulu复播！让我听听大家的声音！】，在直播中播放处刑各位ddgachi。</p>
+<p>某社交恐怖分子的wota艺老哥的恋口上语音： “おまえ一番 lulu酱~~”将全直播间洗脑。当lulu和众dd实在受不了中段播放语音时竟然还有两分钟。lu宝锐评：“脑子没问题吗？我觉得你的父母很担心你。”</p>
+<p>不过在29日的直播中lulu放出了该老哥的另一段语音，在这段语音里老哥唱了《free loop》，嗓音十分好听令众dd震惊。dd们表示这两段的对比就是看lulu前：看lulu后</p>
+<p>某老板财布上了提督后发了100元的sc表示：“主播我卖掉衣服有米上提督了”，对此lu宝锐评：“人出生的时候是没穿衣服的，所以不穿衣服也没事的。”</p>
+<p>某新面孔DD发了30元的SC“不做南同，lulu会爱我吗”以回应lulu的“男酮别”，lulu在念完此sc后沉思片刻，“你去做男同吧”。</p>
+<p>11月29日，lulu进行了此直播的续集。</p>
+<p>某池面音粉丝表示自己不是dd想说点真心话后，在给lulu的提到了“风雨过后总会见彩虹”lulu暂停了一下，随后周杰伦的《彩虹》随之响起，伴着池面电台音彩虹也进入高潮。原来彩虹的BGM是lulu自己放的。lulu：“我太会（直播）了，切片呢！快剪出来！”</p>
+<p>一位dd倾情献唱了《有梦好甜蜜》，因为声音十分像胡彦斌，大家纷纷发问：“彦斌是你吗？”</p>
+<p>此次直播期间两位新粉丝正方形水母和没有人情味的怪物进行了提督内卷，你送一个我送一个。两人大概送了2w元的礼物后又出现一位新老板长方形水母，对此lulu完全傻掉，问直播间的dd知道怎么回事吗，众dd也完全不知道，直到长方形水母老板sc道清是自己安利两位的，当记首功。对此有dd评价：“可能是家族的任务，钱不花完不让回家。（什么龙傲天小说）”</p>
+<p>随后在长方形水母老板进粉丝群并且和自己的同伴确认后发现正方形水母老板并不是自己认识的朋友。原来长方形水母老板本来和另外两个老板约定好一起上提督，结果有一位没有上，期间正好正方形水母老板出现，弄了个大乌龙。长方形水母老板改回了自己原本的id没有人情味的摸摸，看来此前竟然还特地改名迎合了不认识的人。</p>
+<p>一位dd发了视频你在看别的女人吗？ 【男配音】 VRChat，lulu非要和这位碰一碰，结果lulu拙劣的模仿别碰碎了。之后lulu问自己和视频里的形象哪一个更可爱，可众dd答非所问表示她更大，lulu立刻放ed准备羞辱下播。ed没放多久lulu被dd们的呼唤唤回来，lulu收拾了心情换了个bgm表示自己有重大发表：“我做vtuber已经两年半了……”，“所以我认清了一个事情……”，“一个半小时的直播是最适合我的（此时正好一个半小时）”准备开溜。可是直播间的红sc还在挂着，于是lulu籍此重回直播间继续直播。该sc正是没有人情味的怪物老板发的：“他们（另外两位老板）都是我的翅膀。”于是引出来没有人情味的摸摸即长方形水母发红sc表示：“累了休息吧，怪物桑的翅膀折断了一半，他很难受的”。老板逆大天，不过直到最后lulu也没理清三人（由于一位老板改了id她可能以为是四人）的关系。不过到了直播两个小时时lulu表示自己的直播从两个小时后效果很差，于是还是唱了《圈套》后下播了。</p>
+<p>11月28日，参加推迟了近十个月的“京晚”。</p>
+<p>锤：“lulu是日本的vtuber但是中文非常好。”</p>
+<p>（对lulu）“因为有很很多多新粉在这里嘛，那可以用中文介绍一下自己或者用日语介绍一下自己可以吗？”</p>
+<p>lulu：“你的中文发音不太好，我听不懂。”跳脸了啊kora（她真没听懂）</p>
+<p>锤：“这里有一些大家善意的问题，首先说一下（lulu）开始做vtuber的原点？”</p>
+<p>lulu“因为那个时候没有工作，所以做了vtuber。”锤子无奈.gif</p>
+<p>（京华将lulu的回答翻译成英文lulu才反应过来该直播在YouTube上同步直播）</p>
+<p>lulu（自信）：“Hollow，I am name shizikuluu.I like study English and Japanese and Chinese and English.”</p>
+<p>锤（吐槽）：“日语已经很好了还要学吗？！”</p>
+<p>lulu：“不太清楚，我英语有点……我脑子不太好呢。”你那份自信是哪里来的啊。</p>
+<p>11月30日，lulu的C盘又双叒叕满了，并发布动态。该动态下某dd用一堆片假名指导lulu清除更新资料并表示如果lulu很少清除更新资料的话至少能空出10G内存。随后不久lulu发布录屏视频【哈？】，表示该dd的指导根本没用。该dd在视频下评论就算我有99%的错，难道lu宝你就没有1%的责任吗？我想lulu平时不只是懒得清除更新资料，更懒得更新</p>
+<p>12月1日，进行了手机电台直播。本准备23：46下播，但发现12月2日是某粉丝麻衣的生日（和某动漫人物恰巧是同一天），于是伴随着《野狼disco》等待零点的到来再下播。</p>
+<p>12月4日，直播看了《唐伯虎点秋香》却一直在学中文（脏话）。当看到唐伯虎有8个老婆的时候表示惊讶：“怪不得有这么多中国dd。”这波啊，这波是传承。但明明日本古代也是一夫多妻制lulu却一点也不了解，国民性存疑。</p>
+<p>12月8日，联动小柔一起玩超级兔子人。</p>
+<p>12月21日，联动上了V子的节目，嘉宾还有山下智博、京华等</p>
+<p>12月22日，冬至的后一天lulu给大家做了老干妈馅的饺子。</p>
+<p>12月25日，圣诞节和大家一起逛东京。</p>
+<p>12月31日，陪伴大家一起跨年。lulu的qq年龄也跟着到了59岁。</p>
+<h1 id="2022年">2022年</h1>
+<p>1月3日，在网上看到了做自己画图案的煎饼（真·老婆饼）的视频所以学着做。做了各式各样奇怪图案的煎饼。</p>
+<p>1月4日，第二次玩了csgo。在游戏中频频开卖扰乱队友的心。以至于队友：“我超，夹！”；“兄弟把变声器关了吧。”后来在lulu大声说不是兄弟，队友才发现真的是“妹妹”纷纷喊着：“哦哦哦哦，就是好兄弟，给你发狙！”。之后由于受不了lulu的“营业声线”队友表示臭妹妹别这样说话了，心都乱了。”；“刚才虎娘们儿那样就行”</p>
+<p>之后之后有水友通过加同局人好友的方式挤进了房间，队友这才发现：“原来是个大明星！”。很多luu民争相效仿导致队友语音纷纷大喊好友系统要炸了。但也不有路人队友大喊：“我上电视了！”</p>
+<p>第一个挤进来的luu民用普通话夹杂日语大喊：“公主殿下！我来救你了！”之后还组织起了“骑士团”。</p>
+<p>下播后lulu在粉丝群里表示：“xdm太懂直播。”</p>
+<p>1月9日，做一边做螺蛳粉一一边聊天。不知是何原因，烧水时间异常的缓慢。dd们要lulu加一个盖子lulu竟盖上了一张纸。后来这张纸全湿差点掉进汤中。做好后lulu：“我开动了呕呕（中文）。好臭（日语）。”但品尝后lulu表示好吃。嘶——好辣，毫无压力能吃火鸡面，最爱老干妈，吃了三次成都火锅的lulu竟然觉得这个太辣了。</p>
+<p>lulu说自己最近去了池袋买中国食物，和中国男性说话了，dd：“两眼一黑”；lulu：“他说1840元，我说1840元。”（原来是复读机啊，那没事了）但在被问到螺蛳粉多少钱时lulu并不知道比你贵表示自己买东西从不看价。提到“去了”，lulu说自己最近看了中国の本子，知道了去了有那层意思。看本子学中文。</p>
+<p>**直播中lulu问大家小男友是什么意思，众人解释说是年下。lulu表示自己一喜欢35、36、37的筋肉池面（秃顶打咩）。</p>
+<p>1月15日，lulu回到了老家，姐姐（复读机）再次出现在直播中。（14日是姐姐的生日，群友纷纷在群中祝姐姐生日快乐。对群主阿飘的生日祝福歌，姐姐表示：“有些跑调。”唱得很好下次别唱了。）教了姐姐唱中文歌《左手指月》，虽然歌曲本身很难，但姐姐的高音处理的很不错，只不过刚学一天的中文有些糊。唱罢姐姐觉得自己有些紧张没唱好，之后和lulu合唱，lulu高音拉胯。但后面两人是谁在唱有些令人分不清，lulu应该是发音好一些的。</p>
+<p>提问环节姐姐回答了一些dd的提问。dd：“lulu的jio臭吗？”姐姐：“Good smell.”</p>
+<p>面对复读机姐姐，lulu：“我是个阿姨。”姐姐：“我是个阿姨。”lulu还教姐姐“直男，差不多的了。”直播间的dd纷纷发“？”lulu表示这都是你们教我的。</p>
+<p>姐姐曾经留过学，英文十分好。弹幕纷纷刷起lulu的名场景“I am name lulu.”招来姐姐嘲笑。</p>
+<p>情报：姐姐唱功非常好，会做饭喜欢吃辣（lulu说lulu、姐姐和妈妈都喜欢吃辣，但爸爸受不了。），有男友。比lulu矮也比lulu胖一些（明明是lulu太瘦了）。姐姐会唱eva和高达的主题曲，应该是个机甲迷。姐姐喜欢玩APEX，但KDA大概在1.25，除此之外还喜欢COD、我的世界，是个FPS迷。</p>
+<p>7月16日，与小柔一起在B站冰火歌会上演唱了《小手拉大手》。</p>
+<p>9月21日，通过HSK六级考试[81]。</p>
+<p>9月21日，与小柔、健屋花那一起参加山下智博的节目《Vup透明鉴定》。</p>
+<p>9月24日，与小柔、健屋花那在北京悠唐购物中心，中日邦交正常化50周年民间纪念活动现场一起参加山下智博的节目《Vup透明鉴定》第二期。</p>
+<p>10月2日，在B站冰火秋日游歌会上演唱了《飞鸟和蝉》。</p>
+<p>12月29日，参加bilibili举办的《圣诞树下你和我》活动。</p>
+<h1 id="2023年">2023年</h1>
+<p>1月15日，参加B站冰火盛典。</p>
+<p>1月24日，举办首次3D化直播[89]，并达成2000舰长成就。</p>
+<p>1月26日，达成3000万播放成就。</p>
+<p>2月5日，B站账号达成60万粉。</p>
+<p>3月7日，到达中国上海。</p>
+<p>4月下旬，中之人个人信息遭遇发掘，直播中出现恶意跳脸的评论[94]，经冷静应对后事态平息。</p>
+<p>5月27日，B站账号达成70万粉。</p>
+<p>6月11日，举办4周年纪念直播。</p>
+<p>6月16日，B站后台公会信息泄露，雫Lulu被发现加入了恶评满满的直播公会“萌鸽传媒”，遭遇炎上。本人不得不于17日晚间开播解释这一事实并向被欺骗的观众致歉。</p>
+<p>7月21~23日，出席BW2023，举行了一对一连麦与云逛展活动。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[雫るる人事物语的快速索引]]></title>
+        <id>https://anya.moe/post/na-rururen-shi-wu-yu-de-kuai-su-suo-yin/</id>
+        <link href="https://anya.moe/post/na-rururen-shi-wu-yu-de-kuai-su-suo-yin/">
+        </link>
+        <updated>2025-12-06T03:46:08.000Z</updated>
+        <content type="html"><![CDATA[<p>本文搬运自：<a href="https://www.bilibili.com/opus/926613110798680069">雫るる人事物语的快速索引</a></p>
+<p>原作者为：<a href="https://space.bilibili.com/519466119?spm_id_from=333.1369.opus.module_author_avatar.click">sashimi_0o0</a></p>
+<h1 id="新粉必看">新粉必看</h1>
+<p>如果lulu在你眼中只是一个搞笑艺人、歌手或者游戏玩家，请一定要看看下面这个视频，它可以让你深刻地认识到lulu真实而动人的另一面。它也是让我决定推lulu的视频。</p>
+<iframe
+  src="https://player.bilibili.com/player.html?bvid=BV1AL411J7fb&autoplay=0"
+  scrolling="no"
+  border="0"
+  frameborder="no"
+  framespacing="0"
+  allowfullscreen="true"
+  style="width:100%;height:400px;">
+</iframe>
+然后再推荐两位前辈的文章，都是在2020年下半年写的，算是化石级别的材料了，毕竟早期的相关材料很少。
+<p><a href="https://www.bilibili.com/opus/410584240550658043">并不虚拟的“虚拟主播”——浅谈我眼中的雫るる</a></p>
+<p><a href="https://www.bilibili.com/opus/453403634264367991">聊一下我眼里的雫るる</a></p>
+<p>以下是我个人的一些解读。</p>
+<p>lulu小时候其实算不上很顺利，无论是家庭还是学校，都有不少问题，例如父母有时候的极端行为，自己逃课去网吧打游戏（是个网瘾少女）。在她决定当V之前的3个月，曾经经历过非常低谷的时期，找不到人生的意义。其实这种状态算是严重的心理疾病了，如果不能及时调整，是有可能产生轻生的念头的。决定当V纯粹也是想找点事情做，一开始当V的时候并不顺利，粉丝很少，粉丝的增加速度也远不如当时的其他同事，所以她觉得自己不是当V的料，想着等夏天结束（2019年8、9月），就毕业吧。</p>
+<iframe
+  src="https://player.bilibili.com/player.html?bvid=BV17V411k7Dr&autoplay=0"
+  scrolling="no"
+  border="0"
+  frameborder="no"
+  framespacing="0"
+  allowfullscreen="true"
+  style="width:100%;height:400px;">
+</iframe>
+<p>但是，她逐渐感受到直播给她带来的快乐，和粉丝玩游戏、互动给她带来了前所未有的体验。她还提到一点，虽然当时以她的中文水平还看不懂qq群里的聊天内容，但看到那么多粉丝在聊天，她还是非常开心。也正是这种心情，让她萌生出第一次认真学习的想法，她想学中文，想和粉丝聊天。关于突然变得想学习这一点，她自己也感到很不可思议，并觉得是粉丝的行动让她发生了改变。  把lulu说的这些话串起来看，就能得出一个重要的结论：通过直播的契机，她找到了对她来说非常珍贵的事物——人和人之间的关系。真正让她感到开心的，是那种被看到和被需要的感觉，游戏也好，qq群也好，她不仅能和粉丝一起拥有快乐的回忆，更重要的是，她是这份快乐的创造者。就好比lulu之前一直把自己关在小黑屋里，是最初的一批粉丝带她走出小黑屋，通过一起做事情，去感受外面充满阳光的世界。  在最初一批粉丝看来，他们当时还不知道lulu的过去（lulu应该是在2020年3月8日第一次生日回中以小秘密的方式提到上述过去），lulu对他们来说可能只是一个游戏玩家；但在lulu眼里，是这批粉丝看到了她、拯救了她，通过和她产生连接，让她看到了不一样的世界。</p>
+<p>理解了这一点，也就能明白，lulu的直播，是有报恩的因素在里面的，她真的是从心底里把粉丝当朋友，想办法让朋友开心来报答他们；粉丝因为忙碌而不再活跃时，lulu也会感到难过（网页链接​）。这也奠定了lulu和粉丝之间与众不同的关系的基础：lulu的粉丝粘性，本质上是源于她真诚的报恩。  同时，我们也能够从一个相对一致的角度去解读lulu的很多行为：</p>
+<ol>
+<li>
+<p>2019年10月企业解散，虽然一开始也想过就这样结束，但最后她选择转个人势，虽然可能会很艰难，同时她也在直播时向大家承诺：（1）成为中文水平最高的日V；（2）到中国留学；（3）让大家幸福（【【我离职了中】（泣声）想让大家幸福】 ）</p>
+</li>
+<li>
+<p>她去中文班学习，老师问她为什么想学中文，她说，因为她在中国有很多朋友，想跟他们用中文聊天（【【熟肉】一周年纪念配信 一年了，谢谢有你】 【精准空降到 1:52:47】）</p>
+</li>
+<li>
+<p>她愿意和粉丝分享生活中的很多事情，甚至是小时候的事情，甚至甚至是那些现在想起来感到惭愧的往事（例如【我小学生的时候扮演大学生，结果有女JK天天向我告白！【雫るる】】 ）。我想对大多数人来说，如果对方不是自己非常信任的人，是不会分享自己觉得惭愧的往事的</p>
+</li>
+<li>
+<p>从HSK 2级到HSK 6级。这段励志的故事感动了很多粉丝，但其实lulu作为一名网瘾少女，高中的时候也立志要成为一名pro gamer，最后还是面对现实放弃了；不过向来不喜欢学习的lulu竟然能坚持好几年学习中文，背后一定是有一股强大的信念在支撑她</p>
+</li>
+<li>
+<p>2023年对她来说非常艰难，尽管在面对这些艰难的事情时她感到十分不安，她还是没有选择毕业，是粉丝的陪伴让她坚持下来（【【雫るる】回顾2023，感谢lu民的陪伴和支持】 ）</p>
+</li>
+<li>
+<p>在直播间里想尽办法通过节目效果让粉丝开心，下播后也会反思今天有没有让粉丝感到开心（【【雫るる】直播5年の感言】）</p>
+</li>
+</ol>
+<p>到了今天，这种关系的核心还是没有改变，例如，在安徽vlog里面，她在心愿牌上写了“lu民都每天天天开心”<a href="https://www.bilibili.com/video/BV1YC411E7GH/">【lu过你的城市】日本美少女中国旅游记♡安徽3</a>。路人有可能会解读成是讨好粉丝，但了解lulu的粉丝会知道，她是真心感谢粉丝的陪伴，让她过上了全完不一样的人生。  上文阿飘前辈的文章里面，评论区有粉丝提到，“其实我一直都有这种感觉，就是lulu和你们之间的关系与其说是偶像和粉丝，不如说是朋友和伙伴。不过之前我时常会觉得这是一种错觉……” 真诚的关系是能被感知的。</p>
+<p>所以，lulu像一个V吗？如果你愿意把她当朋友，这个问题其实已经不重要了。</p>
+<h1 id="热门梗先列上有空再整理视频链接">热门梗（先列上，有空再整理视频链接）</h1>
+<ol>
+<li>兄弟别冲了呀 &amp; 走神儿</li>
+</ol>
+<p><a href="https://www.bilibili.com/video/BV1Pg411h7XX/">【雫るる】哥哥在吗？哥哥冲完了吗？</a></p>
+<p>应该是最有名的梗了，而且是一对孪生梗，不过前者更有名。因为前者过于逆天，被广大切片man作为片头素材，从而家喻户晓。</p>
+<p>背诵以下全文：</p>
+<p>（夹）莫西莫西，我是lu宝，你的小可爱，哥哥在吗？哥哥？接电话，接个电话，可不可以？哥哥？莫西莫西？喂喂？哥哥？哥哥？接个电话~ 哥哥？在不在？ （严厉）兄弟别冲了呀！！！全都是在冲吗？？？</p>
+<p>此梗诞生于2022年10月25日，lulu与粉丝连麦时，无回应的粉丝被发病状态的lulu认为是在冲，但连续多（2？）名粉丝均无回应，lulu夹了25秒后耐心耗尽，遂道出绝句——兄弟别冲了呀！</p>
+<p>5秒后粉丝连麦成功，被lulu开门见山地质问“冲完了吗”。粉丝震惊，说自己刚才走神儿了。但lulu第一次听说“走神儿”，便追问其含义。但粉丝被逆天质问硬控15秒，处于语无伦次的状态，无法清楚解释“走神儿”的原本含义，于是lulu自以为学到了“走神儿” = “冲”。</p>
+<p>此后，该粉丝迅速出圈，并获得称号“冲哥”，在评论区受万人景仰。大量粉丝把相关切片推荐给其他日V，其他日V在直播间和粉丝一同观看，进一步提升了冲哥的知名度：</p>
+<p>【lulu：哥哥在吗 0g0：不在不在不在】</p>
+<p>【【九重紫/雫るる】紫老师看lulu与粉丝连麦直呼看不懂】</p>
+<p>【日本大聪明看天选国V和粉丝连麦，这下大家都知道他在冲了】</p>
+<p>对此，lulu表示好可怜，但并不是她的错<a href="https://www.bilibili.com/video/BV1G841137fm/">【雫るる】一朝走神儿天下知</a>。后来冲哥在评论区表示，当晚走神儿是因为第一次用连麦软件，不知道自己被选中连麦了。</p>
+<p>冲哥在连麦时提到<a href="https://www.bilibili.com/video/BV1cm4y1c7nv/">【练习口语】她说中文可以轻松拷打粉丝了</a>，自己关注lulu的时候粉丝大概十万出头，考证后冲哥应该是在2020年8月左右开始关注lulu的。不过至今我们也还能在评论区看到冲哥的身影。梗归梗，冲哥用实际行动陪伴了lulu 3年以上，正是这些前辈的支持和陪伴，才有了今天的lulu。</p>
+<ol start="2">
+<li>门牙</li>
+</ol>
+<p>建设中</p>
+<p>素材：【【雫るる】2024年5月10日 老音游人 lulu 直播录像】 【精准空降到 3:55:10】​在安徽装上的门牙很结实，半年了都没掉过！</p>
+<p><a href="https://www.bilibili.com/video/BV1yT421r7Fd/">樱花妹用新买的网红小鸟杯喝水差点把假门牙给磕了，还被呛麻了w</a><br>
+​</p>
+<p><a href="https://www.bilibili.com/video/BV14T421Y7dT/">【bw申草活动】没用的器官有哪些，出题人太没有米线了！</a>​  lulu表示，没有门牙也可以活着</p>
+<p><a href="https://www.bilibili.com/video/BV1Lt4y187bU/">【雫るる】动动手指帮lulu补牙</a>​  一个让人绷不住的二创，拖动滑块帮lulu补牙</p>
+<p><a href="https://www.bilibili.com/video/BV1kE421w7gp/">【雫るる】2024-07-23 棉花糖【直播录播 弹幕版】</a>  棉花糖回，有投稿询问lulu补门牙的经验，lulu建议直接挑最贵的，毕竟门牙要用一辈子。弹幕问如果最贵的还掉下来怎么办，lulu建议去安徽的医院，说从安徽回来之后就没掉过（快9个月了）</p>
+<p><a href="https://www.bilibili.com/video/BV1w84y1d7oC/">【AI雫るる】在线一键语音生成，普通话最标准的一集</a>​  门牙入选AI雫るる的效果展示</p>
+<ol start="3">
+<li>绿水鬼/绿水龟</li>
+</ol>
+<p><a href="https://www.bilibili.com/video/BV1ao4y1z7x5/">【来中国收到粉丝送的劳力士 打开后...】</a></p>
+<p>此梗诞生于2023年3月9日，lulu在拆粉丝送的生日礼物时，收到了一个劳力士手表。文字的表达还是太苍白了，大家可以看上面的lulu官方切片。不过为了增强视频的效果，这个切片调整了画面和声音的相对位置，推荐再看看录播<a href="https://www.bilibili.com/video/BV12Y41167sS/">【雫るる】2023.3.9直播录播_疯狂星期四 一起吃肯德基【源】</a>或者粉丝在直播时做的切片<a href="https://www.bilibili.com/video/BV15P411f7yh/">【雫るる】富哥送了劳力士 打开之后沉默了</a>，记录了lulu现场的完整反应。绿水龟是2023年当之无愧的MVP。</p>
+<p>一些花絮：</p>
+<p>粉丝在劳力士盒子中的留言：永远爱你</p>
+<p>lulu试着戴在手上的时候，盒子距离手很近，为了腾出空间，lulu嫌弃地把盒子推开</p>
+<p>现场lulu对礼物的第一句评价是：时间都不对</p>
+<p>在下播之前，lulu一直把绿水龟戴在手上</p>
+<p>网友在评论区的评论：十块钱的电子手表和一百万的劳力士，它们时间会一样转动</p>
+<p>和绿水鬼相关的后续片段：</p>
+<p>2023年3月11日，【“绿水鬼”手表被压箱底封印，露露准备给自己孩子用，送女朋友手表要调好时间！【雫るる】】  电台回，粉丝问lulu绿水龟怎么样了，lulu说被封印在箱子里了，等有孩子了再给他玩。</p>
+<p>2023年3月18日，【二次伤害，劳力士手表的盒子也是假的！【雫るる】】  lulu学习成语“买椟还珠”，想起了漂亮的劳力士盒子，询问粉丝盒子是不是真的。得知盒子也是假货，直接绷不住，问送绿水鬼的粉丝能不能把她在开箱时期待的瞬间还给她。</p>
+<p>2024年3月11日，【【雫るる】樱花妹再一次收到了富哥送的劳力士……】  一年后，拆生日礼物时发现同一个粉丝又送了劳力士。lulu不抱任何期待地打开，发现是个白色的劳力士盒子，吐槽这次是不是只买了盒子。打开乍眼一看，以为是生活小垃圾，期望已经掉到最低点。再仔细一看，是个绿水龟形状的充气塑料玩具，非常开心地玩了起来，评价“比去年的好”，同时开始期待明年会送什么。</p>
+<p>2024年6月18日，【lulu难绷618网络奇葩商品——兔子门牙和绿水鬼篇】 【精准空降到 00:45】  lulu和粉丝一起观赏网上的奇葩商品，看到了绿水龟只要12.8元，感慨原来这么便宜。还看到盒子上的文字写的是REOLX，当场绷不住。不过2023年的绿水鬼盒子上的文字确实是ROLEX。lulu还提到，绿水龟目前戴在fufu玩偶的手上（【【雫るる】2024-06-18 618快乐【直播录播 弹幕版】】 【精准空降到 31:59】）。</p>
+<ol>
+<li>
+<p>泼水节</p>
+</li>
+<li>
+<p>东京烤鸭</p>
+</li>
+<li>
+<p>14级的别来</p>
+</li>
+<li>
+<p>超爱拉面，超爱游戏2019年7月17日，【露露的B站限定自我介绍】   比出道晚了一个月的自我介绍，但因为形象过于清楚，和现在形成鲜明对比，经常被粉丝拿来嘲讽【雫るる6.11直播录像(lulu出道一周年纪念回！)】 【精准空降到 23:29】 网页链接​  一周年回公开处刑自己</p>
+</li>
+<li>
+<p>广东lu民</p>
+</li>
+<li>
+<p>发病外套</p>
+</li>
+<li>
+<p>丢手机</p>
+</li>
+<li>
+<p>57岁阿姨【【熟肉】一周年纪念配信 一年了，谢谢有你】 【精准空降到 1:49:33】 网页链接​  开玩笑说自己应56岁了</p>
+</li>
+<li>
+<p>天选国V【【lulu】学中文 &amp; 唱歌 2019年6月20日】 【精准空降到 43:13】 网页链接​   最早的“我是中国人”</p>
+</li>
+<li>
+<p>lulu花【【雫るる】今年收到的最逆天礼物！不能在直播间播放？】 网页链接​</p>
+</li>
+</ol>
+<p>……</p>
+<h1 id="学习中文">学习中文</h1>
+<p>2019年5月23日，【【kanna】【lulu】lol联动 &amp; CoDBO4 2019年5月23日】 【精准空降到 09:43】 lulu首次在kanna的直播间作为联动角色登场，打招呼时kanna教lulu用中文说“晚上好”，于是“晚上好”成了lulu在直播时说的第一句中文。然后lulu问kanna“请多关照”用中文怎么说，于是“请多关照”成了lulu在直播时说的第二句中文。虽然有点对不起kanna，但lulu说的“请多关照”听上去已经比kanna标准了。第三句是模仿kanna说的“谢谢”，kanna说的还可以，但lulu模仿得不标准，说成了seisei。第四句是lulu自己说的很标准的“可爱”，应该是之前简单学过。第五句是“贴贴”，是kanna向粉丝说的，lulu不懂，便问kanna是什么意思。（【【kanna】【lulu】lol联动 &amp; CoDBO4 2019年5月23日】 【精准空降到 1:24:57】）第六句是lulu自己说的“么么哒”，不知道她从哪里学来的，然后开始用“么么哒”发病！（【【kanna】【lulu】lol联动 &amp; CoDBO4 2019年5月23日】 【精准空降到 1:28:23】）</p>
+<p>2019年6月11日，【Kanna老师教Lulu中文的自我介绍了呢！！】 【精准空降到 35:13】 正式出道的首播，是由kanna来教lulu用中文自我介绍，还有“超爱拉面，超爱游戏”，最后在kanna的指导下成功完成了经典的自我介绍。后来lulu在2020年8月9日的第一次棉花糖回里面提到，当时只是把“超爱拉面，超爱游戏”的发音背下来，其实并不理解文字的意思。</p>
+<p>2019年6月20日，【【lulu】学中文 &amp; 唱歌 2019年6月20日】 第一次学习回</p>
+<p>【【lulu】学中文 &amp; 唱歌 2019年6月20日】 【精准空降到 21:53】   粉丝上舰了，lulu唱了几句《学猫叫》。2024年5月17日的直播，lulu提到当时还不会中文发音，是一边听歌一边用片假名标注歌词发音，慢慢学会唱的（【【雫るる】唱了四年前还在用片假名拼音的中文歌】 【精准空降到 04:55】 ）</p>
+<p>【雫るる6.11直播录像(lulu出道一周年纪念回！)】 【精准空降到 18:31】 在一周年回公开处刑自己</p>
+<p>2019年12月1日，参加HSK2</p>
+<p>2020年1月2日，HSK2成绩公布，通过</p>
+<p>2020年3月8日，【【全熟】关于生日回迟到了三个月这回事(总之还是生日快乐】 【精准空降到 2:02:15】 lulu一周年生日回上说，自己可能还需要一两年，才能流畅地用中文和大家交流，但她承诺会努力学习，希望大家可以耐心等到那一天的到来。</p>
+<p>2020年4月24日，【雫るる4.24直播录像(杂谈)】 距离承诺成为中文水平最高的日V以来（成为个人势的那天），lulu学习中文已经半年了，这算是lulu第一次尝试全部用中文直播。虽然直播时间只有不到5分钟，而且能看得出来在直播之前做了彩排，但从效果上看，基本上可以理解她说的话了（如果理解不了，那就需要多多练习lu语听力了）。有人也许会觉得有口音什么的，但如果不是从事播音员这种专业的工作，语言只要能交流就可以了；况且中国各地也有自己的方言，带点口音也很正常，把lu语当作一种方言就行。不管怎么样，这一天的直播对lulu来说应该算得上是值得纪念的重要一步。</p>
+<p>2020年5月29日，【中国的航拍，好看！】 lulu用中文给航拍中国的一个片段配音，由于词汇超纲（例如“斑斓”明显不是HSK2水平的词汇）而暴露了在背后跟读的事实。不过即使是跟读，lulu也没有完全跟上，从侧面上也是反映了她那时的中文水平。（录播：【雫るる5.29直播录像(杂谈 shopping)】 【精准空降到 1:33:09】）</p>
+<p>2020年6月1日，【雫るる6.01直播录像(与 丘丘 樱樱火 西米酱 的overcooking联动！)】 【精准空降到 2:07:47】 和2位国V、1位日V联动玩分手厨房。国V之间用中文交流，和日V交流的时候会切到日语。lulu几乎没说话，看起来是在专心玩游戏，但联动结束时说的“拜拜”却感觉她十分失落。联动结束后，lulu跟粉丝道歉，因为几乎听不懂国V说的中文，所以一直没法在联动中说话，觉得自己的表现很不好。一想到去中国留学之后只能说“听不懂”，就太糟糕了，必须好好学习才行。lulu还说，总有一天要用中文直播，但现在还不行，一会下播后就去学习。</p>
+<p>2020年6月11日，一周年回里面有非常多片段，可以让我们看到lulu在这大半年的成长，如果想感受lulu学中文的第一个里程碑式的成果，一定不要错过这些片段：</p>
+<p>【【熟肉】一周年纪念配信 一年了，谢谢有你】 【精准空降到 1:00:07】  “四是四，十是十”的绕口令已经很流畅了，lulu说毕竟自己在最近一年里一直在学习，她自己也是能明显感觉到进步。</p>
+<p>【【熟肉】一周年纪念配信 一年了，谢谢有你】 【精准空降到 2:16:30】 读粉丝的留言板，有的粉丝用中文留言，lulu看着中文就能随口把日语翻译出来，说明她基本上能读明白粉丝的留言。在这次一周年回的最后，她也提到，粉丝发的弹幕也能看懂大部分了。</p>
+<p>【一周年了，lulu有话想跟大家说】 读短文，跟粉丝分享一年来的心路历程，内容还是很感人的。短文应该是字幕组帮忙润色过的，有类似“茫茫人海”这种对lulu来说超纲的词汇。她在直播之前自己也练习了好多次，担心自己发音不好导致粉丝听不懂，但其实听下来是能完全明白的。</p>
+<p>2020年8月9日，【雫るる8.09直播录像(棉花糖杂谈)】  第一次棉花糖回，虽然在直播前做了准备，字幕组也提前帮忙把提问翻译成日文，但这也算是到目前为止中文说得比较多的一次直播了，而且和弹幕即时互动的时候，有时她也会尝试用中文回答，能看得出来，lulu已经从“能读”慢慢转变成“能说”了。下播前，她还问大家听不听得懂她说的中文，大家都说听得懂，她非常开心，并且说以后也希望多尝试用中文直播。这次棉花糖回可以说是lulu转向全中文直播的真正起点。</p>
+<p>2020年8月11日，【雫るる8.11直播录像(杂谈 学习)】  HSK4听力学习回，题目里面还带有一些中文表达的省略习惯，难度一下子上来了。例如，“为什么把饭店转出去”，lulu知道“出”，知道“去”，但不知道“转”是什么意思，更理解不了三个字连在一起的意思，当lulu问起来的时候，直播间的粉丝都觉得很难完全解释清楚，个人感觉要解释清楚，还需要一些中文专业的基础知识才行；有的题听不懂，lulu破防，觉得直播间里面只有她一个人听不懂；有的题还包含“乐于助人”这类文言文表达，lulu听完直接闭麦；知道“出租车”，但理解不了“租车”……即使这样，她还是把自己听不懂的每句话记下来，查翻译去尝试理解。有粉丝安慰lulu，说即使不能完全听懂也没关系，但lulu说，如果现在只知道题目的答案，将来到中国留学，还是不知道大家在说什么。做完听力题后，lulu谈了自己的感想，说从2019年10月开始认真学中文，马上一年了，但很多题目还是完全听不懂，跟其他V相比，有的日V中文很流利，有的国V日语很好，觉得自己没有学中文的才能，感觉“能用中文和大家聊天”的那一天还非常遥远，一想到还要学很久，就觉得希望渺茫。其实她忽略了很重要的一点，她对比的对象也是付出了很多时间，才能达到今天的水平。如果是今天的lulu，应该就能体会到这一点了，只不过当下的她确实是有点emo了，正如粉丝说的，还需要慢慢来。</p>
+<p>心情好点之后，她也和粉丝约定，等到中文说得比较好之后，就教大家日语。2024年4月6日，她还记得这个约定，特地做了一次日语教学回。不过这也让她认识到自己不擅长教大家日语，直言以后不做日语教学回了。</p>
+<p>2020年8月23日，参加HSK4</p>
+<p>2020年9月1日，【雫るる9.01直播录像(杂谈)】 【精准空降到 1:27:50】现场编了一段jkl相关的发病小作文，弹幕吐槽说jkl听不懂日语，lulu说大概明年中文就会说得比较流利了。</p>
+<p>同一天的直播，玩《中国式家长》，不过她静不下心来玩这类游戏，一通乱点，最后高考只有125分，恋爱也失败，让lulu破防了：为什么在游戏里的人生也和现实一样垃圾。在粉丝的提醒下，学会了“人生有梦，各自精彩”。</p>
+<p>2020年9月24日，【雫るる9.24直播录像(hsk4成绩来啦)】 【精准空降到 17:51】 和粉丝一起查HSK4的分数。听力、阅读和写作分别得了92、100和76，总分268，通过。一个月前做听力做到破防，考完之后还说感觉听力考得很糟糕，结果听力分数还挺高；阅读满分，粉丝吐槽说是天天在群里对线的成果；写作还还待提高，自我检讨是因为经常摸鱼不写日记，被粉丝督促要多写日记。</p>
+<p>检讨完之后，开始翻动态评论，看谁准确预测出268这个分数，就给mua。期间有不少评论预测250分，在粉丝的点拨之下学会了250背后的含义，然后给250的评论点“踩”。嗯，又学到了对对线很有用的知识。</p>
+<p>lulu提到，HSK能通过，多亏了大家在QQ里一直和她聊天，说自己经常用百度翻译读大家的聊天内容，所以不怎么在群里说话，狠狠地暗示了“小心lulu”。</p>
+<p>下播后，把HSK4的成绩发到动态里</p>
+<p>2020年9月26日，【雫るる9.26直播录像(杂谈 唱歌 斗地主)】 【精准空降到 10:27】  也许是通过HSK4给了她信心，能明显感觉到从那之后，她说中文的频率提高了，用中文读弹幕和SC，也用中文回复。有些长难句还是用日语，但总体上看说中文的意愿比8月9日的棉花糖回更主动了。</p>
+<p>2020年10月5日，【雫るる10.05编辑版直播录像(杂谈)】 【精准空降到 02:56】 用中文自我介绍+闲聊，脱稿说中文持续了7分钟，其中只有不到15秒的时间说了日语，是感谢sc和饭后打嗝的说明。</p>
+<p>2020年10月21日，【雫るる10.21直播录像(杂谈 斗地主)】 【精准空降到 03:43】 直播间标题是“日语禁止”，lulu想尝试全中文直播，如果说了日语，就把可乐一口闷了。有粉丝故意用日语发弹幕气她，说她中文不行，结果她破防，不仅念了日语弹幕，还用日语回复说“我可在很努力地说中文”，这时直播时长还没过9分钟。意识到自己上当了之后，她沉默了1分钟，期间在摆弄L2D的表情，最后说了一句“禁止中文”。之后就恢复了正常的直播，还唱起了日语歌，“日语禁止”的直播间标题已被无视。</p>
+<p>……（待补充）</p>
+<p>2021年8月18日，HSK5成绩公布，通过。</p>
+<h1 id="lulu日记集合">lulu日记集合</h1>
+<p>2020年4月5日（第一篇日记【待考证】，直接在动态中打字编写；由于日记内容包含抽象要素，评论区有粉丝建议把日记安排成每天整活，lulu表示尝试一下，于是lulu日记成为了记录lulu成长的重要载体）</p>
+<p>2020年6月29日（第一篇写在笔记本的日记）</p>
+<p>建设中。</p>
+<h1 id="28年后的约定">28年后的约定</h1>
+<p>补完这个录播，看到大家都想在28年后相约，很是感动。大家应该很少许下过时间跨度这么长的承诺，应该也跟我一样，有期待，也有不安，担心会遗忘。其实应对遗忘最有效的方法，就是记录。突然觉得，每隔一段时间在评论区提醒一下大家，是个可以实施的想法，于是就动手去做了。</p>
+<p>2024年4月10日  第【1】次​</p>
+<p>2024年5月3日  第【2】次​</p>
+<p>2024年6月11日  第【3】次​</p>
+<p>2024年10月14日  第【4】次​</p>
+<h1 id="厨房回">厨房回</h1>
+<p>2019年10月15日，章鱼铁板烧</p>
+<p>待补充</p>
+<h1 id="模型发布">模型发布</h1>
+<p>2019年5月23日，【【kanna】【lulu】lol联动 &amp; CoDBO4 2019年5月23日】 【精准空降到 09:23】​   首次在kanna的直播间作为联动角色登场 ，此时的模型是一个卡通版静态2D形象</p>
+<p>2019年6月11日，【Kanna老师教Lulu中文的自我介绍了呢！！】​  出道版本的静态2D</p>
+<p>2019年6月15日，【【lulu】Live2D首发！2019年6月15日】 【精准空降到 04:55】​   出道版本L2D</p>
+<p>2020年5月23日，【【新衣装发表】豆蔻花开蛱蝶飞 晚妆楼上换新衣】 【精准空降到 06:46】​ 休闲版本L2D</p>
+<p>……（待补充）</p>
+<p>2024年6月11日，【【雫るる】红豆泥还原但是逆天的Q版形象】​  汉服版本L2D，粉丝做的</p>
+<h1 id="感动瞬间">感动瞬间</h1>
+<p>【【全熟】关于生日回迟到了三个月这回事(总之还是生日快乐】 【精准空降到 1:50:54】2020年3月8日。lulu一周年生日回上说，自己从生无可恋，到萌生出人生中第一次认真学习的想法，是因为大家的陪伴。和上文“新粉必看”中的视频算是互为因果。</p>
+<p>2021年6月12日。双方许下的诺言</p>
+<p>【【雫るる】回答了关于lulu中国留学和毕业的提问(直播剪辑)】 【精准空降到 07:19】粉丝问来中国留学后还会不会直播，lulu说想继续直播，给大家分享在中国的生活。她确实兑现承诺了。</p>
+<p>【【雫るる】回答了关于lulu中国留学和毕业的提问(直播剪辑)】 【精准空降到 04:57】 粉丝说，如果lulu不直播了，也会有人在直播间等lulu回来；当时lulu不相信。现在有证据了：【【雫るる】一个月不直播 这是主播的直播数据发生的变化】</p>
+<p>【【雫るる】lulu毕业十年后的故事】 2022年2月9日。lulu和粉丝们坦白，看到熟悉的粉丝离开，自己会伤心难过，不过她明白天下无不散之筵席，明白粉丝说的“一直在”不可能是一直，明白“永远支持lulu”并不是永远。我想补充的是，但即使她知道这些，她还是努力为粉丝开心而直播。</p>
+<h1 id="沙雕往事">沙雕往事</h1>
+<p>【雫lulu回忆出道时被粉丝骗的经历，直言心之壁加厚，不再相信粉丝】 【精准空降到 02:50】 2022年12月18日。粉丝说中国疫情开放了，lulu不信，给粉丝们细数年少时被骗往事：四川骑熊猫上学（【【lulu】学中文 &amp; 唱歌 2019年6月20日】 【精准空降到 1:21:08】），内蒙古堵马。</p>
+<p>【雫るる8.25直播录像(七夕快乐)】 【精准空降到 15:49】  2020年8月25日，念《卧春》</p>
+<p>【【kanna】【lulu】躲猫猫 2019年6月19日】 【精准空降到 16:54】 网页链接​  第一次大笑</p>
+<p>【【lulu】学中文 &amp; 唱歌 2019年6月20日】 【精准空降到 29:23】  网页链接​   第一次学习回就吃薯片，当V出道还不到10天，就开始放飞自我了</p>
+<p>【【lulu】学中文 &amp; 唱歌  2019年6月20日】 【精准空降到 2:00:57】  网页链接​   发病，用嘶哑的声音唱《学猫叫》</p>
+<h1 id="数学天才">数学天才</h1>
+<p>鸡兔同笼</p>
+<p>一元二次方程</p>
+<p>计算3的7次方</p>
+<p>唱《琪露诺的完美算术教室》，是天才了</p>
+<p>点评：阿姨毕竟年过半百了，大家还是宽容一些吧。</p>
+<h1 id="粉丝增长">粉丝增长</h1>
+<p>1000粉丝：2019年6月15日，来自直播时的弹幕提醒，【【lulu】Live2D首发！2019年6月15日】 【精准空降到 06:25】​</p>
+<p>5000粉丝：2019年8月？日，估计不准确，但由于lulu的直播间在2019年8月14日首次显示粉丝数量时就已经达到5900多​，猜测是在8月初达到的</p>
+<p>5000粉丝后的增长情况可以参考【近五年雫るる_Official涨粉变化】​和第三方数据网站https://vtbs.moe/detail/387636363</p>
+<p>10000粉丝：2019年9月21日，根据第三方数据网站得知。lulu在2019年9月的最后一次直播是15日的肥宅演唱会​，下播前粉丝数约9450（当天直播画面没有显示粉丝数，数据来源：https://vtbs.moe/detail/387636363）；10月第一次开播是3日，开播时粉丝数是11416​。9月下旬猜测是企业内部在商讨团队解散事宜，所以没播。</p>
+<p>20000粉丝：2019年11月10日，根据第三方数据网站得知。由于缺少录播资源，无法得知当天是否有直播。在11月8日的一个切片中，lulu为达到2万粉感到开心​，不过那是B站数据显示时四舍五入的结果，当时的粉丝数大约是19533。</p>
+<p>30000粉丝：2019年12月17日，根据第三方数据网站得知。由于缺少录播资源，无法得知当天是否有直播。</p>
+<p>……（建设中）</p>
+<h1 id="杂项未分类">杂项（未分类）</h1>
+<p>【【lulu】英雄联盟 &amp; 唱歌 2019年6月24日】 【精准空降到 06:02】 网页链接​   luu民粉丝牌的诞生</p>
+<p>【【熟肉】一周年纪念配信 一年了，谢谢有你】 【精准空降到 1:25:26】 网页链接​  转个人势后，在一家中国人开的公司里工作，只有lulu一个日本人，工作内容大概是给去日本旅游的中国人打广告</p>
+<p>【【熟肉】一周年纪念配信 一年了，谢谢有你】 【精准空降到 2:20:00】 网页链接​  还记得当时是怎么跟一些粉丝认识的</p>
+<p>【雫るる8.09直播录像(棉花糖杂谈)】 【精准空降到 1:57:32】 网页链接​   lulu自述：我讨厌不洗澡就上床，觉得不洗澡的人有问题，有点变态</p>
+<p>【雫るる10.21直播录像(杂谈 斗地主)】 【精准空降到 19:57】 网页链接​  说自己不会弹吉他</p>
+<p>lulu的收入确实高，但个人势相当于自己开公司，所有开销也是从她手上支出，而且还需要留一部分用作运营的流动资金和风险管理。例如收藏集，假设请画师需要10w，如果只有15w，你大概率不会冒险去做；如果有50w，你才会去试试。lulu的活动要在流动资金充足的情况下开展，不能结束后就穷得吃土，所以个人势运营相关的开销不应该算到她真正可支配的收入里面，这和我们平时理解的百万年薪不同。  另外，个人势相当于什么事都得自己管，并不是只有开播才算在工作。先不说她还要上课，来简单数数她需要做的事： 1.做vlog：大家看到lulu的一个vlog大概是20分钟，但做起来非常花时间，写vlog剧本、选视频素材、剪辑、配BGM、后期处理，粗略估计一个20分钟的vlog，可能要做150~200小时 2.准备舰长礼物：周边类型的礼物需要构思、设计、找厂商谈方案和价格、拿到样品后迭代、确定量产；还有画头像，今年3月生日回推测有80多个提督，一个头像画2小时，共160小时。因为太费时间，lulu在3D回取消了提督头像的礼物 3.月报：构思、选素材、编写文字、排版、定稿，粗略估计一张月报花费15~20小时 4.大活动策划：BW要排练节目、练歌、做宣传视频、小推车活动对接、摊位申请和现场管理、周边设计（参考舰长礼物）、摊位活动安排和实施；3D回要策划剧本、做宣传视频、练歌练舞练琴、原创歌曲创作、3D模型对接、3D公司事务对接、准备礼物、舞台排练 5.平时直播前lulu也要构思直播大纲，不能全靠临场发挥：杂谈要准备话题和趣事，危险厨房要准备食材、构思菜谱，棉花糖也过一下投稿。游戏回的准备相对轻松，所以她在7月初玩了好多次pvz，是因为实在没时间准备直播内容了  上面的事情，lulu如果决定要去做，就要做好，做得拉胯只会减分，外包也不代表可以当甩手掌柜，还要持续跟进确认每个细节，这些都要投入大量时间。以3D回为例，3D公司会找lulu确认每个方案的每个细节，如果效果不如预期，还要反复沟通。况且上述事项只是从我个人角度给出的，还有很多我不了解的琐事，lulu都需要去做。  如果有兄弟觉得lulu是个很闲的大懒狗，可以想象一下自己能否把上面的工作都做好。更何况lulu还要上课，以我的了解，在学生时期要像lulu那样处理好这么多事情，是非常难的。</p>
+<p>弥补当年遗憾这一点肯定是有的。不过真的是缘分啊，5年前lulu肯定想象不到今天会以这种形式，从某种程度上来实现偶像的梦想。  虽然不是传统偶像，但在这场live里面，偶像和粉丝的关系是非常特殊的。对传统偶像来说，舞台和演出是偶像和粉丝之间互动的窗口，粉丝对偶像的情感更多是追逐和崇拜。但lulu不是这样，通过直播间，lulu和lu民之间的互动频率远远高于传统偶像和粉丝，做的事情也远远不止偶像表达感谢和粉丝表达崇拜：聊天、打游戏、学中文、学科目一、做ppt、讲生活小故事、对线、做饭、点歌、做手工、拆礼物、读棉花糖、读故事、写春联……这里面几乎没有适合传统偶像做的事情。lulu是在和大家一起生活，她就像是住在隔壁家的大姐姐，lu民隔三差五就跑过去串门几小时，几年沉淀下来的情感是传统偶像难以做到的：传统偶像不能在舞台上讲双截棍逆天小故事，但lulu可以；传统粉丝不能在舞台下喊阿姨开门，但lu民可以。3D live就像是隔壁家大姐姐要表演节目，大家屁颠屁颠地带着凳子去围观，尽管在舞台上偶像力爆棚，但走下舞台后，转身就给大家分享舞台上的小故事，又重新开始了细水长流的生活。  lulu好几次问大家觉得她是不是偶像，从她的反应来看，感觉她心里的回答是否定的。虽然不太清楚她追求的是偶像的哪一点，但如果当初真的往传统偶像发展，lu民就少了一位好朋友、好兄弟了。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[☂️Pitter patter-雫るる]]></title>
+        <id>https://anya.moe/post/pitter-patter-na-ruru/</id>
+        <link href="https://anya.moe/post/pitter-patter-na-ruru/">
+        </link>
+        <updated>2025-11-26T03:53:12.000Z</updated>
+        <content type="html"><![CDATA[<p>まぶたからこぼれた　昨日の夢</p>
+<p>どこまでもいけそうな気がしてた…｡ﾟ(ﾟ｡◡_◡ )ﾟ｡</p>
+<p>┈ ┈ ┈ ┈ ┈ ┈  ┈ ┈ ┈ ┈ ┈ ┈</p>
+<p>『 Pitter patter 』</p>
+<p>作詞：magmag、雫るる</p>
+<p>作曲：magmag</p>
+<p>編曲：magmag</p>
+<iframe
+  src="https://player.bilibili.com/player.html?bvid=BV1mvzjYhE3C"
+  scrolling="no"
+  border="0"
+  frameborder="no"
+  framespacing="0"
+  allowfullscreen="true"
+  style="width:100%;height:400px;"
+></iframe>
+]]></content>
+    </entry>
+</feed>

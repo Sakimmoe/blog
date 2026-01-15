@@ -1,0 +1,292 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    
+<meta charset="utf-8" >
+
+<title>把博客从Halo换成了Gridea | 雫るる MOE !</title>
+<meta name="description" content="&lt;div id=&#34;count&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+  const target = new Date(&#34;2052-02-29T00:00:00&#34;);
+
+  function update() {
+    const now = new Date(); // 使用系统时间：如果电脑是北京时间就是北京时间
+    let diff = target - now;
+
+    if (diff &lt; 0) diff = 0;
+
+    const sec = Math.floor(diff / 1000);
+    const days = Math.floor(sec / 86400);
+    const hours = Math.floor((sec % 86400) / 3600);
+    const minutes = Math.floor((sec % 3600) / 60);
+    const seconds = sec % 60;
+
+    document.getElementById(&#34;count&#34;).textContent =
+      `距离 2052-02-29 还有 ${days} 天 ${hours} 时 ${minutes} 分 ${seconds} 秒！`;
+  }
+
+  update();
+  setInterval(update, 1000);
+&lt;/script&gt;">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://anya.moe/favicon.ico?v=1768453694697">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://anya.moe/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://anya.moe">
+        <img class="avatar" src="https://anya.moe/images/avatar.png?v=1768453694697" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://anya.moe">
+        <h1 class="site-title">雫るる MOE !</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            留言
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
+        <div class="post-detail">
+          
+          <h2 class="post-title">把博客从Halo换成了Gridea</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2026-01-04</span>
+            
+              <span>
+                <i class="icon-pricetags-outline"></i>
+                
+                  <a href="https://anya.moe/tag/FDidNKZPk4/">
+                    技术
+                    
+                  </a>
+                
+              </span>
+            
+          </div>
+          <div class="post-content" v-pre>
+            <p>这几天一直在折腾手上的几台机器，现在一个月的月费有将近40欧，所以想精简一下服务器。<br>
+所以我就想找个静态博客用CF Page托管。<br>
+直到昨天看到了Gridea这个静态博客系统，我非常喜欢这种简洁风格。<br>
+这里分享一下是怎么搭建的。</p>
+<h1 id="创建github仓库">创建Github仓库</h1>
+<p><a href="https://github.com/new">https://github.com/new</a><br>
+创建个username.github.io，username就是你用户名，其实也可以不这样子，仓库名随便取，只是没法用github pages而已，不影响部署到cf pages和vercel的。</p>
+<h1 id="申请token">申请token</h1>
+<p><a href="https://github.com/settings/tokens/new">https://github.com/settings/tokens/new</a><br>
+token时间选择永久，repo勾上，token只显示一次，记得保存下。<br>
+<img src="https://anya.moe/post-images/1767536709142.png" alt="" loading="lazy"></p>
+<h1 id="配置gridea">配置gridea</h1>
+<p><a href="https://github.com/getgridea/gridea/releases">https://github.com/getgridea/gridea/releases</a><br>
+自己根据客户端下载<br>
+支持mac，win，linux三大客户端<br>
+<img src="https://anya.moe/post-images/1767536718171.png" alt="" loading="lazy"><br>
+点击左边的远程，界面长这样子<br>
+选择github pages，<br>
+域名：你要绑的域名<br>
+仓库名称：刚刚建的github的仓库的名字:username.github.io这样子<br>
+分支：现在一般默认是main，自己看下你github仓库<br>
+仓库用户名：你github的user name<br>
+邮箱：你github的邮箱<br>
+令牌：刚刚第三步申请的token<br>
+cname这个不用github page啥的话不用管，要用的话填你要绑的域名</p>
+<p>然后保存，再点下检测远程连接的，显示成功的话就ok了</p>
+<p>点击最左边这个按钮，点进去，有个站点源文件路径，那就是gridea的配置文件了，要备份的话直接打包上传到网盘，或者直接整个坚果云或者onedrive啥的同步直接<br>
+<img src="https://anya.moe/post-images/1767536813001.png" alt="" loading="lazy"></p>
+<p>Gridea支持markdown，点击左边的文章，自己写就行了。<br>
+点击左下角同步，同步到你github。<br>
+如果没法同步的话，设置里又http代理设置，自己填写。</p>
+<h1 id="部署到各家平台">部署到各家平台</h1>
+<p>这里我只介绍Cloudflare和Vercel,Vercel的话国内访问速度更好一点，不过我喜欢放到CF。</p>
+<h2 id="cloudflare">Cloudflare</h2>
+<h3 id="点击workes-and-pages">点击workes and pages</h3>
+<p><img src="https://anya.moe/post-images/1767537060600.png" alt="" loading="lazy"><br>
+创建应用程序，选择pages，连接到git，连接到github账户，选择你刚刚创建的那个github仓库。<br>
+然后点开始设置， 保存并部署。</p>
+<h3 id="设置自定义域">设置自定义域</h3>
+<p>输入你在gridea里填的域名<br>
+<img src="https://anya.moe/post-images/1767537195125.png" alt="" loading="lazy"><br>
+然后点激活域再等会就ok了<br>
+浏览器打开你的域名就可以访问了。</p>
+<h2 id="vercel">Vercel</h2>
+<p>打开Vercel，选择使用Github登录。<br>
+点击右上角singup。<br>
+点击add new project,选择你的github仓库，再点击import。<br>
+<img src="https://anya.moe/post-images/1767537454775.png" alt="" loading="lazy"><br>
+然后点击deploy直接部署<br>
+<img src="https://anya.moe/post-images/1767537473972.png" alt="" loading="lazy"><br>
+然后就部署好了</p>
+<h2 id="设置自定义域-2">设置自定义域</h2>
+<p>默认的vercel.app被墙了，输入你在gridea里填的域名。<br>
+点击setting，选择左边的domains。<br>
+填写你的Gridea的域名，记下Vercel给的记录，然后到你的域名托管商那里添加就行了。<br>
+或者cname到cname.vercel-dns.com都是可以的。<br>
+Vercel的亚马逊aga到国内速度明显比其他的快，推荐这个部署，但是免费只有100G的流量，不过个人博客也够用了。</p>
+<p>本文改自：<a href="https://www.nodeseek.com/post-8624-1">https://www.nodeseek.com/post-8624-1</a></p>
+
+          </div>
+        </div>
+
+        
+          <div class="next-post">
+            <a class="purple-link" href="https://anya.moe/post/yabs-netcup-vps-500-g11s-jun25/">
+              <h3 class="post-title">
+                下一篇：【YABS】Netcup VPS 500 G11s JUN25
+              </h3>
+            </a>
+          </div>
+          
+      </div>
+
+      
+        
+          <div id="gitalk-container"></div>
+        
+
+        
+      
+
+      <div class="site-footer">
+  <div class="slogan"><div id="count"></div>
+
+<script>
+  const target = new Date("2052-02-29T00:00:00");
+
+  function update() {
+    const now = new Date(); // 使用系统时间：如果电脑是北京时间就是北京时间
+    let diff = target - now;
+
+    if (diff < 0) diff = 0;
+
+    const sec = Math.floor(diff / 1000);
+    const days = Math.floor(sec / 86400);
+    const hours = Math.floor((sec % 86400) / 3600);
+    const minutes = Math.floor((sec % 3600) / 60);
+    const seconds = sec % 60;
+
+    document.getElementById("count").textContent =
+      `距离 2052-02-29 还有 ${days} 天 ${hours} 时 ${minutes} 分 ${seconds} 秒！`;
+  }
+
+  update();
+  setInterval(update, 1000);
+</script></div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> ©2026 雫るる MOE! | <a class="rss" href="https://anya.moe/atom.xml" target="_blank">RSS</a>
+</div>
+
+
+    </div>
+    <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'Ov23liuMjZ09yiDLg8Fj',
+        clientSecret: 'a55f4502b1663f6b152505a2a30abdcbb2ff5067',
+        repo: 'blog',
+        owner: 'Sakimmoe',
+        admin: ['Sakimmoe'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,318 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    
+<meta charset="utf-8" >
+
+<title>雫るる | 雫るる MOE !</title>
+<meta name="description" content="&lt;div id=&#34;count&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+  const target = new Date(&#34;2052-02-29T00:00:00&#34;);
+
+  function update() {
+    const now = new Date(); // 使用系统时间：如果电脑是北京时间就是北京时间
+    let diff = target - now;
+
+    if (diff &lt; 0) diff = 0;
+
+    const sec = Math.floor(diff / 1000);
+    const days = Math.floor(sec / 86400);
+    const hours = Math.floor((sec % 86400) / 3600);
+    const minutes = Math.floor((sec % 3600) / 60);
+    const seconds = sec % 60;
+
+    document.getElementById(&#34;count&#34;).textContent =
+      `距离 2052-02-29 还有 ${days} 天 ${hours} 时 ${minutes} 分 ${seconds} 秒！`;
+  }
+
+  update();
+  setInterval(update, 1000);
+&lt;/script&gt;">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://anya.moe/favicon.ico?v=1768453694697">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://anya.moe/styles/main.css">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://anya.moe">
+        <img class="avatar" src="https://anya.moe/images/avatar.png?v=1768453694697" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://anya.moe">
+        <h1 class="site-title">雫るる MOE !</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            留言
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
+
+        <div class="current-tag-container">
+          <h2 class="title">
+            <i class="icon icon-pricetags-outline"></i> 雫るる
+          </h2> 
+        </div>
+
+        
+<section class="post-item">
+    <div class="content">
+      <a href="https://anya.moe/post/zhe-teng-liao-ji-tian-zhong-yu-ba-lun-tan-da-jian-hao-liao/">
+        <h2 class="post-title">折腾了几天 终于把论坛搭建好了</h2>
+      </a>
+      <div class="post-abstract">
+        
+      </div>
+      <div class="post-info">
+        <span><i class="icon icon-calendar-outline"></i> 2025-12-21</span>
+        
+          <span>
+            <i class="icon icon-pricetags-outline"></i>
+            
+              <a href="https://anya.moe/tag/yIdNlKikfY/">
+                雫るる
+                
+                  ，
+                
+              </a>
+            
+              <a href="https://anya.moe/tag/FDidNKZPk4/">
+                技术
+                
+              </a>
+            
+          </span>
+        
+      </div>
+    </div>
+    
+  </section>
+
+<section class="post-item">
+    <div class="content">
+      <a href="https://anya.moe/post/nong-liao-yi-ge-yu-na-ruru28-nian-zhi-yue-de-dao-ji-shi-wang-ye/">
+        <h2 class="post-title">弄了一个与雫るる28年之约的倒计时网页</h2>
+      </a>
+      <div class="post-abstract">
+        
+      </div>
+      <div class="post-info">
+        <span><i class="icon icon-calendar-outline"></i> 2025-12-07</span>
+        
+          <span>
+            <i class="icon icon-pricetags-outline"></i>
+            
+              <a href="https://anya.moe/tag/yIdNlKikfY/">
+                雫るる
+                
+              </a>
+            
+          </span>
+        
+      </div>
+    </div>
+    
+  </section>
+
+<section class="post-item">
+    <div class="content">
+      <a href="https://anya.moe/post/na-rurude-li-cheng/">
+        <h2 class="post-title">雫るる的历程</h2>
+      </a>
+      <div class="post-abstract">
+        
+      </div>
+      <div class="post-info">
+        <span><i class="icon icon-calendar-outline"></i> 2025-12-06</span>
+        
+          <span>
+            <i class="icon icon-pricetags-outline"></i>
+            
+              <a href="https://anya.moe/tag/yIdNlKikfY/">
+                雫るる
+                
+              </a>
+            
+          </span>
+        
+      </div>
+    </div>
+    
+  </section>
+
+<section class="post-item">
+    <div class="content">
+      <a href="https://anya.moe/post/na-rururen-shi-wu-yu-de-kuai-su-suo-yin/">
+        <h2 class="post-title">雫るる人事物语的快速索引</h2>
+      </a>
+      <div class="post-abstract">
+        
+      </div>
+      <div class="post-info">
+        <span><i class="icon icon-calendar-outline"></i> 2025-12-06</span>
+        
+          <span>
+            <i class="icon icon-pricetags-outline"></i>
+            
+              <a href="https://anya.moe/tag/yIdNlKikfY/">
+                雫るる
+                
+              </a>
+            
+          </span>
+        
+      </div>
+    </div>
+    
+  </section>
+
+<section class="post-item">
+    <div class="content">
+      <a href="https://anya.moe/post/pitter-patter-na-ruru/">
+        <h2 class="post-title">☂️Pitter patter-雫るる</h2>
+      </a>
+      <div class="post-abstract">
+        
+      </div>
+      <div class="post-info">
+        <span><i class="icon icon-calendar-outline"></i> 2025-11-26</span>
+        
+          <span>
+            <i class="icon icon-pricetags-outline"></i>
+            
+              <a href="https://anya.moe/tag/yIdNlKikfY/">
+                雫るる
+                
+              </a>
+            
+          </span>
+        
+      </div>
+    </div>
+    
+  </section>
+
+
+<div class="pagination-container">
+  
+  
+</div>
+
+
+      </div>
+
+      <div class="site-footer">
+  <div class="slogan"><div id="count"></div>
+
+<script>
+  const target = new Date("2052-02-29T00:00:00");
+
+  function update() {
+    const now = new Date(); // 使用系统时间：如果电脑是北京时间就是北京时间
+    let diff = target - now;
+
+    if (diff < 0) diff = 0;
+
+    const sec = Math.floor(diff / 1000);
+    const days = Math.floor(sec / 86400);
+    const hours = Math.floor((sec % 86400) / 3600);
+    const minutes = Math.floor((sec % 3600) / 60);
+    const seconds = sec % 60;
+
+    document.getElementById("count").textContent =
+      `距离 2052-02-29 还有 ${days} 天 ${hours} 时 ${minutes} 分 ${seconds} 秒！`;
+  }
+
+  update();
+  setInterval(update, 1000);
+</script></div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> ©2026 雫るる MOE! | <a class="rss" href="https://anya.moe/atom.xml" target="_blank">RSS</a>
+</div>
+
+
+    </div>
+    <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+  </body>
+</html>

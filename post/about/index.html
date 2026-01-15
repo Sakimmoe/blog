@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    
+<meta charset="utf-8" >
+
+<title>留言 | 雫るる MOE !</title>
+<meta name="description" content="&lt;div id=&#34;count&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+  const target = new Date(&#34;2052-02-29T00:00:00&#34;);
+
+  function update() {
+    const now = new Date(); // 使用系统时间：如果电脑是北京时间就是北京时间
+    let diff = target - now;
+
+    if (diff &lt; 0) diff = 0;
+
+    const sec = Math.floor(diff / 1000);
+    const days = Math.floor(sec / 86400);
+    const hours = Math.floor((sec % 86400) / 3600);
+    const minutes = Math.floor((sec % 3600) / 60);
+    const seconds = sec % 60;
+
+    document.getElementById(&#34;count&#34;).textContent =
+      `距离 2052-02-29 还有 ${days} 天 ${hours} 时 ${minutes} 分 ${seconds} 秒！`;
+  }
+
+  update();
+  setInterval(update, 1000);
+&lt;/script&gt;">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://anya.moe/favicon.ico?v=1768453694697">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://anya.moe/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://anya.moe">
+        <img class="avatar" src="https://anya.moe/images/avatar.png?v=1768453694697" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://anya.moe">
+        <h1 class="site-title">雫るる MOE !</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            留言
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
+        <div class="post-detail">
+          
+          <h2 class="post-title">留言</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2025-04-27</span>
+            
+          </div>
+          <div class="post-content" v-pre>
+            <p>WELCOME TO MY BLOG 欢迎访问我的博客。</p>
+<p>我是 Sakim。这个名字来源于我最喜欢的动漫角色 - 见崎鸣 MISAKI MEI 。</p>
+<p>域名中的“雫”，读作 nǎ ，是水滴，水滴如雨下的意思，便作“雫”。</p>
+<p>本博客主要用于日常记录、转载存档、随笔感想等内容。</p>
+<p>博主喜欢听音乐、打游戏、看小说和看动漫，最最最喜欢 雫るる 了！</p>
+<p>博主最喜欢的游戏是 《守望先锋》 ，最喜欢的歌手是 HoneyComeBear ，最喜欢的作者是 乙一 ，最喜欢的动漫角色是 见崎鸣 ！ 如果需要联系博主，请在此留言，其他形式的私聊将不会回复。</p>
+
+          </div>
+        </div>
+
+        
+      </div>
+
+      
+        
+          <div id="gitalk-container"></div>
+        
+
+        
+      
+
+      <div class="site-footer">
+  <div class="slogan"><div id="count"></div>
+
+<script>
+  const target = new Date("2052-02-29T00:00:00");
+
+  function update() {
+    const now = new Date(); // 使用系统时间：如果电脑是北京时间就是北京时间
+    let diff = target - now;
+
+    if (diff < 0) diff = 0;
+
+    const sec = Math.floor(diff / 1000);
+    const days = Math.floor(sec / 86400);
+    const hours = Math.floor((sec % 86400) / 3600);
+    const minutes = Math.floor((sec % 3600) / 60);
+    const seconds = sec % 60;
+
+    document.getElementById("count").textContent =
+      `距离 2052-02-29 还有 ${days} 天 ${hours} 时 ${minutes} 分 ${seconds} 秒！`;
+  }
+
+  update();
+  setInterval(update, 1000);
+</script></div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> ©2026 雫るる MOE! | <a class="rss" href="https://anya.moe/atom.xml" target="_blank">RSS</a>
+</div>
+
+
+    </div>
+    <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'Ov23liuMjZ09yiDLg8Fj',
+        clientSecret: 'a55f4502b1663f6b152505a2a30abdcbb2ff5067',
+        repo: 'blog',
+        owner: 'Sakimmoe',
+        admin: ['Sakimmoe'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>

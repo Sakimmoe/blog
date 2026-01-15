@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    
+<meta charset="utf-8" >
+
+<title>Pulse探针的安装与升级 | 雫るる MOE !</title>
+<meta name="description" content="&lt;div id=&#34;count&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+  const target = new Date(&#34;2052-02-29T00:00:00&#34;);
+
+  function update() {
+    const now = new Date(); // 使用系统时间：如果电脑是北京时间就是北京时间
+    let diff = target - now;
+
+    if (diff &lt; 0) diff = 0;
+
+    const sec = Math.floor(diff / 1000);
+    const days = Math.floor(sec / 86400);
+    const hours = Math.floor((sec % 86400) / 3600);
+    const minutes = Math.floor((sec % 3600) / 60);
+    const seconds = sec % 60;
+
+    document.getElementById(&#34;count&#34;).textContent =
+      `距离 2052-02-29 还有 ${days} 天 ${hours} 时 ${minutes} 分 ${seconds} 秒！`;
+  }
+
+  update();
+  setInterval(update, 1000);
+&lt;/script&gt;">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://anya.moe/favicon.ico?v=1768453694697">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://anya.moe/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://anya.moe">
+        <img class="avatar" src="https://anya.moe/images/avatar.png?v=1768453694697" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://anya.moe">
+        <h1 class="site-title">雫るる MOE !</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            留言
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
+        <div class="post-detail">
+          
+          <h2 class="post-title">Pulse探针的安装与升级</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2025-12-29</span>
+            
+              <span>
+                <i class="icon-pricetags-outline"></i>
+                
+                  <a href="https://anya.moe/tag/FDidNKZPk4/">
+                    技术
+                    
+                  </a>
+                
+              </span>
+            
+          </div>
+          <div class="post-content" v-pre>
+            <p>前两天在论坛看到这个探针，非常符合我的审美，我非常喜欢这种简洁干净的风格。</p>
+<h1 id="pulse的安装">Pulse的安装</h1>
+<h2 id="一键安装">一键安装</h2>
+<pre><code>curl -fsSL https://raw.githubusercontent.com/xhhcn/Pulse/main/install-pulse-server.sh | sudo bash
+</code></pre>
+<p>脚本会自动：<br>
+✅ 检测系统架构</p>
+<pre><code>✅ 下载对应的二进制文件
+
+✅ 配置 systemd 服务
+
+✅ 启动服务并设置开机自启    
+</code></pre>
+<p>访问 http://YOUR_IP:8008 查看监控面板</p>
+<h1 id="pulse的升级">Pulse的升级</h1>
+<h2 id="先删掉原来的版本">先删掉原来的版本</h2>
+<pre><code>systemctl stop pulse-server &amp;&amp; sudo systemctl disable pulse-server 
+rm -f /opt/pulse/pulse-server /etc/systemd/system/pulse-server.service
+systemctl daemon-reload
+</code></pre>
+<h2 id="再次运行一次安装脚本">再次运行一次安装脚本</h2>
+<pre><code>curl -fsSL https://raw.githubusercontent.com/xhhcn/Pulse/main/install-pulse-server.sh | sudo bash
+</code></pre>
+<p>升级完成！</p>
+<h1 id="pulse的删除">Pulse的删除</h1>
+<h2 id="客户端删除命令">客户端删除命令</h2>
+<pre><code>systemctl stop pulse-client &amp;&amp; systemctl disable pulse-client &amp;&amp; rm -rf /opt/pulse/pulse-client /etc/systemd/system/pulse-client.service
+</code></pre>
+<h2 id="服务端删除命令">服务端删除命令</h2>
+<pre><code>systemctl stop pulse-server &amp;&amp; systemctl disable pulse-server &amp;&amp; rm -rf /opt/pulse /etc/systemd/system/pulse-server.service
+</code></pre>
+<p><a href="https://github.com/xhhcn/Pulse">Pulse 项目地址</a></p>
+
+          </div>
+        </div>
+
+        
+          <div class="next-post">
+            <a class="purple-link" href="https://anya.moe/post/zhe-teng-liao-ji-tian-zhong-yu-ba-lun-tan-da-jian-hao-liao/">
+              <h3 class="post-title">
+                下一篇：折腾了几天 终于把论坛搭建好了
+              </h3>
+            </a>
+          </div>
+          
+      </div>
+
+      
+        
+          <div id="gitalk-container"></div>
+        
+
+        
+      
+
+      <div class="site-footer">
+  <div class="slogan"><div id="count"></div>
+
+<script>
+  const target = new Date("2052-02-29T00:00:00");
+
+  function update() {
+    const now = new Date(); // 使用系统时间：如果电脑是北京时间就是北京时间
+    let diff = target - now;
+
+    if (diff < 0) diff = 0;
+
+    const sec = Math.floor(diff / 1000);
+    const days = Math.floor(sec / 86400);
+    const hours = Math.floor((sec % 86400) / 3600);
+    const minutes = Math.floor((sec % 3600) / 60);
+    const seconds = sec % 60;
+
+    document.getElementById("count").textContent =
+      `距离 2052-02-29 还有 ${days} 天 ${hours} 时 ${minutes} 分 ${seconds} 秒！`;
+  }
+
+  update();
+  setInterval(update, 1000);
+</script></div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> ©2026 雫るる MOE! | <a class="rss" href="https://anya.moe/atom.xml" target="_blank">RSS</a>
+</div>
+
+
+    </div>
+    <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'Ov23liuMjZ09yiDLg8Fj',
+        clientSecret: 'a55f4502b1663f6b152505a2a30abdcbb2ff5067',
+        repo: 'blog',
+        owner: 'Sakimmoe',
+        admin: ['Sakimmoe'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>

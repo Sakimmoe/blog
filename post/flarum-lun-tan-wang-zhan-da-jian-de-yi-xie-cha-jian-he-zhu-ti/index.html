@@ -1,0 +1,337 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    
+<meta charset="utf-8" >
+
+<title>Flarum论坛网站搭建的一些插件和主题 | 雫るる MOE !</title>
+<meta name="description" content="&lt;div id=&#34;count&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+  const target = new Date(&#34;2052-02-29T00:00:00&#34;);
+
+  function update() {
+    const now = new Date(); // 使用系统时间：如果电脑是北京时间就是北京时间
+    let diff = target - now;
+
+    if (diff &lt; 0) diff = 0;
+
+    const sec = Math.floor(diff / 1000);
+    const days = Math.floor(sec / 86400);
+    const hours = Math.floor((sec % 86400) / 3600);
+    const minutes = Math.floor((sec % 3600) / 60);
+    const seconds = sec % 60;
+
+    document.getElementById(&#34;count&#34;).textContent =
+      `距离 2052-02-29 还有 ${days} 天 ${hours} 时 ${minutes} 分 ${seconds} 秒！`;
+  }
+
+  update();
+  setInterval(update, 1000);
+&lt;/script&gt;">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://anya.moe/favicon.ico?v=1768453694697">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://anya.moe/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://anya.moe">
+        <img class="avatar" src="https://anya.moe/images/avatar.png?v=1768453694697" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://anya.moe">
+        <h1 class="site-title">雫るる MOE !</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            留言
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
+        <div class="post-detail">
+          
+          <h2 class="post-title">Flarum论坛网站搭建的一些插件和主题</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2025-12-17</span>
+            
+              <span>
+                <i class="icon-pricetags-outline"></i>
+                
+                  <a href="https://anya.moe/tag/FDidNKZPk4/">
+                    技术
+                    
+                  </a>
+                
+              </span>
+            
+          </div>
+          <div class="post-content" v-pre>
+            <p>安装中文语言包</p>
+<pre><code class="language-bash">composer require flarum-lang/chinese-simplified:dev-master
+</code></pre>
+<p>页眉页脚自定义</p>
+<pre><code class="language-html">&lt;div class=&quot;footer&quot; style=&quot;padding:0 15px;&quot;&gt;
+    &lt;p style=&quot;text-align: center;&quot;&gt;
+        Copyright © 2023 by &lt;a style=&quot;padding: 0 3px;&quot; href=&quot;[https://blog.zeruns.com/](https://blog.zeruns.com/)&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;blog.zeruns.com&lt;/b&gt;&lt;/a&gt;
+    &lt;/p&gt;
+    &lt;p style=&quot;text-align: center;&quot;&gt;
+        声明：除非另有说明，否则本站内容依据 &lt;a rel=&quot;license&quot; href=&quot;[https://creativecommons.org/licenses/by-sa/4.0/deed.zh](https://creativecommons.org/licenses/by-sa/4.0/deed.zh)&quot; target=&quot;_blank&quot;&gt;CC BY-SA 4.0&lt;/a&gt; 许可证进行授权，转载请附上出处链接。
+    &lt;/p&gt;
+    &lt;p style=&quot;text-align: center;&quot;&gt;
+        ⛵️🐳 &lt;a href=&quot;[https://blog.zeruns.com/](https://blog.zeruns.com/)&quot; target=&quot;_blank&quot; style=&quot;font-weight:bold; color:transparent;background-image:linear-gradient(to right,#0ea5e9,#2563eb);-webkit-background-clip: text;background-clip: text&quot;&gt;Zeruns&lt;/a&gt; | 💡 &lt;a href=&quot;[https://blog.zeruns.com](https://blog.zeruns.com)&quot; target=&quot;_blank&quot;&gt;About&lt;/a&gt;
+    &lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+<p>OXO主题</p>
+<pre><code class="language-bash">composer require yannisme/oxotheme
+</code></pre>
+<p>Fluent-Flarum主题</p>
+<pre><code class="language-bash">composer require dalez/fluent-flarum
+</code></pre>
+<p>FoF User Directory：为论坛添加用户目录页面，方便浏览和搜索用户。</p>
+<pre><code class="language-bash">composer require fof/user-directory:&quot;*&quot;
+</code></pre>
+<p>FoF Filter：帮助论坛管理员自动审核和过滤用户生成的内容。</p>
+<pre><code class="language-bash">composer require fof/filter:&quot;*&quot;
+</code></pre>
+<p>FoF Links：让你在论坛的导航栏、侧边栏或页脚添加自定义链接，方便用户快速访问论坛内外的重要页面。</p>
+<pre><code class="language-bash">composer require fof/links
+</code></pre>
+<p>SEO：专注于 SEO 优化。</p>
+<pre><code class="language-bash">composer require v17development/flarum-seo
+</code></pre>
+<p>Discussion views：显示每个话题 (讨论) 的浏览量，让用户和管理员一目了然地看到社区内容的受欢迎程度。</p>
+<pre><code class="language-bash">composer require michaelbelgium/flarum-discussion-views
+</code></pre>
+<p>Echo showfloor：像百度贴吧一样显示楼层。</p>
+<pre><code class="language-bash">composer require wanecho/showfloor:&quot;*&quot;
+</code></pre>
+<p>Emoji Picker：让用户在论坛中方便地插入表情符号，与论坛自带的 Emoji 插件冲突，需要先禁用默认的 Emoji 插件。</p>
+<pre><code class="language-bash">composer require clarkwinkelmann/flarum-ext-emojionearea
+</code></pre>
+<p>Fancybox-Plus：为 Flarum 论坛提供图片浏览增强功能，安装之后点击图片将会弹出一个优雅的图片浏览界面。</p>
+<pre><code class="language-bash">composer require tohsakarat/fancybox-plus
+</code></pre>
+<p>FoF Sitemap：为 Flarum 论坛提供站点地图 (Sitemap) 功能，提升网站的 SEO 表现。</p>
+<pre><code class="language-bash">composer require fof/sitemap
+</code></pre>
+<p>UserCard UID</p>
+<pre><code class="language-bash">composer require datlechin/flarum-usercard-uid:&quot;*&quot;
+</code></pre>
+<p>Auto Post Badge</p>
+<pre><code class="language-bash">composer require litalino/flarum-auto-post-count-badge:&quot;*&quot;
+</code></pre>
+<p>Top Bar Extension</p>
+<pre><code class="language-bash">composer require litalino/flarum-top-bar:&quot;*&quot;
+</code></pre>
+<p>我的留档</p>
+<pre><code class="language-html">&lt;link href=&quot;[https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css](https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css)&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;[https://lf3-static.bytednsdoc.com/obj/eden-cn/hjeh7pldztwm/dyfont/index.css](https://lf3-static.bytednsdoc.com/obj/eden-cn/hjeh7pldztwm/dyfont/index.css)&quot;&gt;
+
+&lt;div style=&quot;display: flex; gap: 20px; font-family: 'DouyinSans', sans-serif; font-weight: 600;&quot;&gt;
+
+  &lt;a href=&quot;[https://space.bilibili.com/387636363?spm_id_from=333.1387.follow.user_card.click](https://space.bilibili.com/387636363?spm_id_from=333.1387.follow.user_card.click)&quot; 
+     target=&quot;_blank&quot; 
+     rel=&quot;noopener noreferrer&quot; 
+     style=&quot;color: #FFB6C1; text-decoration: none; font-size: 17px; display: inline-flex; align-items: center; gap: 6px;&quot;&gt;
+     &lt;i class=&quot;ri-bilibili-line&quot;&gt;&lt;/i&gt;
+     &lt;span&gt;哔哩哔哩&lt;/span&gt;
+  &lt;/a&gt;
+
+  &lt;a href=&quot;[https://live.bilibili.com/21013446?broadcast_type=0&amp;is_room_feed=1&amp;spm_id_from=333.1387.to_liveroom.0.click&amp;live_from=86002](https://live.bilibili.com/21013446?broadcast_type=0&amp;is_room_feed=1&amp;spm_id_from=333.1387.to_liveroom.0.click&amp;live_from=86002)&quot; 
+     target=&quot;_blank&quot; 
+     rel=&quot;noopener noreferrer&quot; 
+     style=&quot;color: #FFB6C1; text-decoration: none; font-size: 17px; display: inline-flex; align-items: center; gap: 6px;&quot;&gt;
+     &lt;i class=&quot;ri-live-line&quot;&gt;&lt;/i&gt;
+     &lt;span&gt;直播间&lt;/span&gt;
+  &lt;/a&gt;
+
+&lt;/div&gt;
+</code></pre>
+<p>Extension Manager</p>
+<pre><code class="language-bash">composer require flarum/extension-manager:&quot;*&quot;
+</code></pre>
+<p>FoF Best Answer</p>
+<pre><code class="language-bash">composer require fof/best-answer:&quot;*&quot;
+</code></pre>
+<p>FoF Byobu</p>
+<pre><code class="language-bash">composer require fof/byobu:&quot;*&quot;
+</code></pre>
+<p>FoF Gamification</p>
+<pre><code class="language-bash">composer require fof/gamification
+</code></pre>
+<p>FoF OAuth</p>
+<pre><code class="language-bash">composer require fof/oauth
+</code></pre>
+<p>FoF Polls</p>
+<pre><code class="language-bash">composer require fof/polls:&quot;*&quot;
+</code></pre>
+<p>FoF Upload</p>
+<pre><code class="language-bash">composer require fof/upload:&quot;*&quot;
+</code></pre>
+
+          </div>
+        </div>
+
+        
+          <div class="next-post">
+            <a class="purple-link" href="https://anya.moe/post/nong-liao-yi-ge-yu-na-ruru28-nian-zhi-yue-de-dao-ji-shi-wang-ye/">
+              <h3 class="post-title">
+                下一篇：弄了一个与雫るる28年之约的倒计时网页
+              </h3>
+            </a>
+          </div>
+          
+      </div>
+
+      
+        
+          <div id="gitalk-container"></div>
+        
+
+        
+      
+
+      <div class="site-footer">
+  <div class="slogan"><div id="count"></div>
+
+<script>
+  const target = new Date("2052-02-29T00:00:00");
+
+  function update() {
+    const now = new Date(); // 使用系统时间：如果电脑是北京时间就是北京时间
+    let diff = target - now;
+
+    if (diff < 0) diff = 0;
+
+    const sec = Math.floor(diff / 1000);
+    const days = Math.floor(sec / 86400);
+    const hours = Math.floor((sec % 86400) / 3600);
+    const minutes = Math.floor((sec % 3600) / 60);
+    const seconds = sec % 60;
+
+    document.getElementById("count").textContent =
+      `距离 2052-02-29 还有 ${days} 天 ${hours} 时 ${minutes} 分 ${seconds} 秒！`;
+  }
+
+  update();
+  setInterval(update, 1000);
+</script></div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> ©2026 雫るる MOE! | <a class="rss" href="https://anya.moe/atom.xml" target="_blank">RSS</a>
+</div>
+
+
+    </div>
+    <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'Ov23liuMjZ09yiDLg8Fj',
+        clientSecret: 'a55f4502b1663f6b152505a2a30abdcbb2ff5067',
+        repo: 'blog',
+        owner: 'Sakimmoe',
+        admin: ['Sakimmoe'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>
